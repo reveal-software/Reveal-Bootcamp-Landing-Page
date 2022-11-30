@@ -85,7 +85,7 @@ export default function Home() {
                     {"With today's technology learning is easy."}
                   </p>
                 </div>
-                <div className="w-full flex justify-evenly mx-[10%]">
+                <div className="flex justify-evenly mt-16">
                   <div className="hidden md:block ">
                     <h1 className="border-b-4 border-black text-left font-[900] text-2xl">
                       100+
