@@ -85,9 +85,9 @@ export default function Home() {
                     {"With today's technology learning is easy."}
                   </p>
                 </div>
-                <div className="w-full flex justify-evenly">
-                  <div className="">
-                    <h1 className="hidden md:block border-b-4 border-black text-left font-[900] text-2xl">
+                <div className="w-full flex justify-evenly mx-[10%]">
+                  <div className="hidden md:block ">
+                    <h1 className="border-b-4 border-black text-left font-[900] text-2xl">
                       100+
                     </h1>
                     <p className="text-lg">Members Joined</p>
