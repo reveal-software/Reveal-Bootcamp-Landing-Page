@@ -61,7 +61,7 @@ export default function Home() {
               <div className="text-center pb-12 md:pb-16">
                 <h1
                   className="
-                text-5xl
+                text-4xl
                 md:text-6xl
                 font-extrabold
                 leading-tighter
