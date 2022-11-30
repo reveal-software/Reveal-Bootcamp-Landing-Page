@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
                 <div className="w-full flex justify-evenly">
                   <div className="">
-                    <h1 className="border-b-4 border-black text-left font-[900] text-5xl">
+                    <h1 className="hidden md:block border-b-4 border-black text-left font-[900] text-2xl">
                       100+
                     </h1>
                     <p className="text-lg">Members Joined</p>
@@ -119,7 +119,7 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="flex">
+                  <div className="hidden md:flex">
                     <svg
                       className="w-[50px] h-[50px]"
                       viewBox="0 0 489.327 489.327"
@@ -950,10 +950,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
           <div className="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://flowbite.com/"
-              className="flex items-center mb-4 sm:mb-0"
-            >
+            <a href="#" className="flex items-center mb-4 sm:mb-0">
               <svg
                 className="w-8 h-8"
                 viewBox="0 0 32 32"
@@ -1029,8 +1026,8 @@ export default function Home() {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+            <a href="#" className="hover:underline">
+              Addis-Bootcamp
             </a>
             . All Rights Reserved.
           </span>
