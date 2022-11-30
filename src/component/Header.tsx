@@ -55,9 +55,9 @@ const Header = () => {
                     r="79.941%"
                     id="header-logo"
                   >
-                    <stop stopcolor="#4FD1C5" offset="0%" />
-                    <stop stopcolor="#81E6D9" offset="25.871%" />
-                    <stop stopcolor="#338CF5" offset="100%" />
+                    <stop stopColor="#4FD1C5" offset="0%" />
+                    <stop stopColor="#81E6D9" offset="25.871%" />
+                    <stop stopColor="#338CF5" offset="100%" />
                   </radialGradient>
                 </defs>
                 <rect
@@ -65,7 +65,7 @@ const Header = () => {
                   height={32}
                   rx={16}
                   fill="url(#header-logo)"
-                  fillrule="nonzero"
+                  fillRule="nonzero"
                 />
               </svg>
             </div>
@@ -81,7 +81,6 @@ const Header = () => {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <div
-                  to="/signup"
                   className="
                       border-2
                       border-black
@@ -111,7 +110,7 @@ const Header = () => {
                   >
                     <path
                       d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                      fillrule="nonzero"
+                      fillRule="nonzero"
                     />
                   </svg>
                 </div>

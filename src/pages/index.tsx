@@ -45,12 +45,12 @@ export default function Home() {
                   y2="100%"
                   id="illustration-01"
                 >
-                  <stop stopcolor="#FFF" offset="0%" />
-                  <stop stopcolor="#EAEAEA" offset="77.402%" />
-                  <stop stopcolor="#DFDFDF" offset="100%" />
+                  <stop stopColor="#FFF" offset="0%" />
+                  <stop stopColor="#EAEAEA" offset="77.402%" />
+                  <stop stopColor="#DFDFDF" offset="100%" />
                 </linearGradient>
               </defs>
-              <g fill="url(#illustration-01)" fillrule="evenodd">
+              <g fill="url(#illustration-01)" fillRule="evenodd">
                 <circle cx={1232} cy={128} r={128} />
                 <circle cx={155} cy={443} r={64} />
               </g>
@@ -82,7 +82,7 @@ export default function Home() {
                     data-aos="zoom-y-out"
                     data-aos-delay={150}
                   >
-                    With today's technology learning is easy.
+                    {"With today's technology learning is easy."}
                   </p>
                 </div>
                 <div className="w-full flex justify-evenly">
@@ -165,7 +165,7 @@ export default function Home() {
 
                     <p className="text-left text-sm ml-2">
                       Professional and
-                      <br /> Experienced Mentors{" "}
+                      <br /> Experienced Mentors
                     </p>
                   </div>
                 </div>
@@ -240,14 +240,14 @@ export default function Home() {
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <rect
                         className="fill-current text-blue-600"
                         width={64}
                         height={64}
                         rx={32}
                       />
-                      <g strokewidth={2}>
+                      <g strokeWidth={2}>
                         <path
                           className="stroke-current text-blue-300"
                           d="M34.514 35.429l2.057 2.285h8M20.571 26.286h5.715l2.057 2.285"
@@ -258,12 +258,12 @@ export default function Home() {
                         />
                         <path
                           className="stroke-current text-blue-300"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                           d="M41.143 34.286l3.428 3.428-3.428 3.429"
                         />
                         <path
                           className="stroke-current text-white"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                           d="M41.143 29.714l3.428-3.428-3.428-3.429"
                         />
                       </g>
@@ -292,17 +292,17 @@ export default function Home() {
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <rect
                         className="fill-current text-blue-600"
                         width={64}
                         height={64}
                         rx={32}
                       />
-                      <g strokewidth={2} transform="translate(19.429 20.571)">
+                      <g strokeWidth={2} transform="translate(19.429 20.571)">
                         <circle
                           className="stroke-current text-white"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                           cx="12.571"
                           cy="12.571"
                           r="1.143"
@@ -341,14 +341,14 @@ export default function Home() {
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <rect
                         className="fill-current text-blue-600"
                         width={64}
                         height={64}
                         rx={32}
                       />
-                      <g strokelinecap="square" strokewidth={2}>
+                      <g strokeLinecap="square" strokeWidth={2}>
                         <path
                           className="stroke-current text-blue-300"
                           d="M38.826 22.504a9.128 9.128 0 00-13.291-.398M35.403 25.546a4.543 4.543 0 00-6.635-.207"
@@ -383,17 +383,17 @@ export default function Home() {
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <rect
                         className="fill-current text-blue-600"
                         width={64}
                         height={64}
                         rx={32}
                       />
-                      <g transform="translate(22.857 19.429)" strokewidth={2}>
+                      <g transform="translate(22.857 19.429)" strokeWidth={2}>
                         <path
                           className="stroke-current text-white"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                           d="M12.571 4.571V0H0v25.143h12.571V20.57"
                         />
                         <path
@@ -402,12 +402,12 @@ export default function Home() {
                         />
                         <path
                           className="stroke-current text-white"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                           d="M19.429 8L24 12.571l-4.571 4.572"
                         />
                         <circle
                           className="stroke-current text-blue-300"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                           cx="12.571"
                           cy="12.571"
                           r="3.429"
@@ -438,14 +438,14 @@ export default function Home() {
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <rect
                         className="fill-current text-blue-600"
                         width={64}
                         height={64}
                         rx={32}
                       />
-                      <g strokelinecap="square" strokewidth={2}>
+                      <g strokeLinecap="square" strokeWidth={2}>
                         <path
                           className="stroke-current text-white"
                           d="M20.571 20.571h13.714v17.143H20.571z"
@@ -480,14 +480,14 @@ export default function Home() {
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <rect
                         className="fill-current text-blue-600"
                         width={64}
                         height={64}
                         rx={32}
                       />
-                      <g strokewidth={2}>
+                      <g strokeWidth={2}>
                         <path
                           className="stroke-current text-white"
                           d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"
@@ -503,7 +503,7 @@ export default function Home() {
                         <path
                           className="stroke-current text-blue-300"
                           d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572"
-                          strokelinecap="square"
+                          strokeLinecap="square"
                         />
                       </g>
                     </g>
@@ -547,15 +547,15 @@ export default function Home() {
                   y2="100%"
                   id="illustration-02"
                 >
-                  <stop stopcolor="#FFF" offset="0%" />
-                  <stop stopcolor="#EAEAEA" offset="77.402%" />
-                  <stop stopcolor="#DFDFDF" offset="100%" />
+                  <stop stopColor="#FFF" offset="0%" />
+                  <stop stopColor="#EAEAEA" offset="77.402%" />
+                  <stop stopColor="#DFDFDF" offset="100%" />
                 </linearGradient>
               </defs>
               <g
                 transform="translate(0 -3)"
                 fill="url(#illustration-02)"
-                fillrule="evenodd"
+                fillRule="evenodd"
               >
                 <circle cx={1630} cy={128} r={128} />
                 <circle cx={178} cy={481} r={40} />
@@ -798,64 +798,64 @@ export default function Home() {
                         r="96.031%"
                         id="ni-a"
                       >
-                        <stop stopcolor="#DFDFDF" offset="0%" />
-                        <stop stopcolor="#4C4C4C" offset="44.317%" />
-                        <stop stopcolor="#333" offset="100%" />
+                        <stop stopColor="#DFDFDF" offset="0%" />
+                        <stop stopColor="#4C4C4C" offset="44.317%" />
+                        <stop stopColor="#333" offset="100%" />
                       </radialGradient>
                     </defs>
-                    <g fill="none" fillrule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <g fill="#FFF">
                         <ellipse
-                          fillopacity=".04"
+                          fillOpacity=".04"
                           cx={185}
                           cy="15.576"
                           rx={16}
                           ry="15.576"
                         />
                         <ellipse
-                          fillopacity=".24"
+                          fillOpacity=".24"
                           cx={100}
                           cy="68.402"
                           rx={24}
                           ry="23.364"
                         />
                         <ellipse
-                          fillopacity=".12"
+                          fillOpacity=".12"
                           cx={29}
                           cy="251.231"
                           rx={29}
                           ry="28.231"
                         />
                         <ellipse
-                          fillopacity=".64"
+                          fillOpacity=".64"
                           cx={29}
                           cy="251.231"
                           rx={8}
                           ry="7.788"
                         />
                         <ellipse
-                          fillopacity=".12"
+                          fillOpacity=".12"
                           cx={342}
                           cy="31.303"
                           rx={8}
                           ry="7.788"
                         />
                         <ellipse
-                          fillopacity=".48"
+                          fillOpacity=".48"
                           cx={62}
                           cy="126.811"
                           rx={2}
                           ry="1.947"
                         />
                         <ellipse
-                          fillopacity=".12"
+                          fillOpacity=".12"
                           cx={78}
                           cy="7.072"
                           rx={2}
                           ry="1.947"
                         />
                         <ellipse
-                          fillopacity=".64"
+                          fillOpacity=".64"
                           cx={185}
                           cy="15.576"
                           rx={6}
@@ -875,7 +875,6 @@ export default function Home() {
                 items-center
               "
                 >
-                  <div className />
                   <div className="text-center lg:text-left lg:max-w-xl">
                     <h3 className="h3 text-white mb-2">
                       Powering your business
@@ -969,9 +968,9 @@ export default function Home() {
                     r="79.941%"
                     id="header-logo"
                   >
-                    <stop stopcolor="#4FD1C5" offset="0%" />
-                    <stop stopcolor="#81E6D9" offset="25.871%" />
-                    <stop stopcolor="#338CF5" offset="100%" />
+                    <stop stopColor="#4FD1C5" offset="0%" />
+                    <stop stopColor="#81E6D9" offset="25.871%" />
+                    <stop stopColor="#338CF5" offset="100%" />
                   </radialGradient>
                 </defs>
                 <rect
@@ -979,7 +978,7 @@ export default function Home() {
                   height={32}
                   rx={16}
                   fill="url(#header-logo)"
-                  fillrule="nonzero"
+                  fillRule="nonzero"
                 />
               </svg>
               <span

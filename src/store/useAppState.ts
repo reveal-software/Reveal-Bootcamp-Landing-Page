@@ -14,7 +14,7 @@ const initialState: AppState = {
 export const useAppState = create(
   devtools(
     combine(initialState, (set, get) => ({
-      setTheme: (theme: string) =>
+      setTheme: (theme: boolean) =>
         set(
           produce((state: AppState) => {
             state.theme = theme;
