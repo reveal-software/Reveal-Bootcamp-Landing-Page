@@ -37,44 +37,18 @@ const Header = () => {
       `}
     >
       {/* ` ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}> */}
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0 mr-4">
             <div className="block" aria-label="Cruip">
-              <svg
-                className="w-8 h-8"
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <radialGradient
-                    cx="21.152%"
-                    cy="86.063%"
-                    fx="21.152%"
-                    fy="86.063%"
-                    r="79.941%"
-                    id="header-logo"
-                  >
-                    <stop stopColor="#4FD1C5" offset="0%" />
-                    <stop stopColor="#81E6D9" offset="25.871%" />
-                    <stop stopColor="#338CF5" offset="100%" />
-                  </radialGradient>
-                </defs>
-                <rect
-                  width={32}
-                  height={32}
-                  rx={16}
-                  fill="url(#header-logo)"
-                  fillRule="nonzero"
-                />
-              </svg>
+              <h2 className="font-[600]">Skillfull</h2>
             </div>
           </div>
           <div className="flex-grow">
-            <ul className="hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center">
-              <li className="font-[500] text-gray-700">Courses</li>
-              <li className="font-[500] text-gray-700">Admission</li>
-              <li className="font-[500] text-gray-700">Testimonial</li>
+            <ul className="hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center text-lg md:text-xl font-[500] text-gray-700">
+              <li>Courses</li>
+              <li>Admission</li>
+              <li>Testimonial</li>
             </ul>
           </div>
           <nav className="flex flex-grow">
