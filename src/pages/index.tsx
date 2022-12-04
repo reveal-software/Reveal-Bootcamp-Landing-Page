@@ -1,6 +1,7 @@
 import { useAmp } from "next/amp";
 import Head from "next/head";
 import Image from "next/image";
+import CountSection from "../component/CountSection";
 import Header from "../component/Header";
 import Timeline from "../component/Timeline";
 import { useAppState } from "../store/useAppState";
@@ -58,6 +59,7 @@ export default function Home() {
               </g>
             </svg>
           </div> */}
+
           <div className="pt-[20vh] max-w-8xl mx-auto px-4 sm:px-6 relative">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
               <div className="text-center pb-12 md:pb-16">
@@ -87,18 +89,20 @@ export default function Home() {
                     data-aos="zoom-y-out"
                     data-aos-delay={150}
                   >
-                    {"With today's technology learning is easy."}
+                    {"Learn in-demand skills. change your life."}
                   </p>
                 </div>
-                <div className="flex justify-evenly mt-16">
-                  <div className="hidden md:block ">
-                    <h1 className="border-b-4 border-black text-left font-[900] text-2xl">
-                      100+
-                    </h1>
-                    <p className="text-lg">Members Joined</p>
+
+                <div className="flex justify-center mx-[15%] mt-16">
+                  <div className="hidden md:block flex-1">
+                    <p className="text-md text-left overflow-hidden">
+                      Program design & delivered by experts with over 13 years
+                      of experience. Learn in-demand skills & change your
+                      lifestyle
+                    </p>
                   </div>
                   <div
-                    className="flex-grow max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+                    className="flex-grow flex-5 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
                     data-aos="zoom-y-out"
                     data-aos-delay={300}
                   >
@@ -120,57 +124,14 @@ export default function Home() {
                       cursor-pointer
                     "
                       >
-                        Get Started Now
+                        APPLY TODAY
                       </a>
                     </div>
                   </div>
-                  <div className="hidden md:flex">
-                    <svg
-                      className="w-[50px] h-[50px]"
-                      viewBox="0 0 489.327 489.327"
-                    >
-                      <g>
-                        <g>
-                          <path
-                            d="M476.616,273.213l-9.1-12.6c-7.6-10.4-7.7-24.5-0.3-35.1l8.9-12.7c10.4-14.8,5.5-35.3-10.3-43.9l-13.6-7.4
-			c-11.3-6.1-17.5-18.8-15.3-31.5l2.6-15.4c3-17.8-10.2-34.3-28.2-35l-15.4-0.7c-12.8-0.5-23.8-9.3-27.4-21.7l-4.3-15
-			c-5-17.4-24-26.4-40.4-19.2l-14.2,6.2c-11.8,5.1-25.5,2.1-34-7.6l-10.3-11.6c-12-13.5-33-13.3-44.7,0.3l-10.1,11.8
-			c-8.4,9.7-22,13-33.9,8.1l-14.3-5.9c-16.6-6.9-35.4,2.4-40.2,19.9l-4.1,15c-3.5,12.6-14.4,21.5-27.1,22.2l-15.4,0.9
-			c-17.9,1-30.9,17.7-27.6,35.4l2.8,15.3c2.3,12.7-3.7,25.5-14.9,31.7l-13.5,7.6c-15.7,8.8-20.2,29.4-9.6,44l9.1,12.6
-			c7.6,10.4,7.7,24.5,0.3,35.1l-9.1,12.8c-10.4,14.8-5.5,35.3,10.3,43.9l13.6,7.4c11.3,6.1,17.5,18.8,15.3,31.5l-2.5,15.2
-			c-3,17.8,10.2,34.3,28.2,35l15.4,0.7c12.8,0.5,23.8,9.3,27.4,21.7l4.3,15c5,17.4,24,26.4,40.4,19.2l14.2-6.2
-			c11.8-5.1,25.5-2.1,34,7.5l10.3,11.6c12,13.5,33,13.3,44.7-0.3l10.1-11.8c8.4-9.7,22-13,33.9-8.1l14.3,5.9
-			c16.6,6.9,35.4-2.4,40.2-19.9l4.1-15c3.4-12.4,14.3-21.3,27.1-22.1l15.4-0.9c17.9-1,30.9-17.7,27.6-35.5l-2.8-15.3
-			c-2.3-12.7,3.7-25.5,14.9-31.7l13.5-7.6C482.716,308.513,487.216,287.813,476.616,273.213z M244.616,393.513
-			c-82.4,0-149.2-67.3-149.2-150.3s66.8-150.4,149.2-150.4s149.2,67.3,149.2,150.3S327.016,393.513,244.616,393.513z"
-                          />
-                          <path
-                            d="M332.316,205.213l-55.8-4.1l-21.1-52.2c-4-9.8-17.8-9.8-21.7,0l-21.1,52.2l-55.8,4.1c-10.5,0.8-14.8,14-6.7,20.8
-			l42.7,36.3l-13.4,54.7c-2.5,10.3,8.6,18.5,17.6,12.9l47.5-29.7l47.5,29.7c8.9,5.6,20.1-2.6,17.6-12.9l-13.4-54.7l42.7-36.3
-			C347.116,219.213,342.816,206.013,332.316,205.213z"
-                          />
-                        </g>
-                      </g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                    </svg>
-
-                    <p className="text-left text-sm ml-2">
-                      Professional and
-                      <br /> Experienced Mentors
+                  <div className="hidden md:flex flex-1">
+                    <p className="text-left ml-2">
+                      Project Based Learning, you will build a real-world full
+                      product throughout the journey One-to-One Mentorship
                     </p>
                   </div>
                 </div>
@@ -178,19 +139,19 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative mx-auto h-[420px] w-[420px] -rotate-[7deg] mt-[30px] shadow-xl overflow-hidden rounded-[25px] bg-gray-400">
+            <div className="relative mx-auto h-[420px] w-[420px] -rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
               <img
                 className="absolute w-full h-full top-0 left-0"
                 src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
               />
             </div>
-            <div className="relative mx-auto h-[420px] w-[420px] overflow-hidden shadow-xl rounded-[25px] bg-gray-400">
+            <div className="relative mx-auto h-[420px] w-[420px] overflow-hidden rounded-[25px] bg-gray-400">
               <img
                 className="absolute w-full h-full top-0 left-0"
                 src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
               />
             </div>
-            <div className="relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] shadow-xl overflow-hidden rounded-[25px] bg-gray-400">
+            <div className="relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
               <img
                 className="absolute w-full h-full top-0 left-0"
                 src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
@@ -199,8 +160,36 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Section */}
+        <section className="h-[400px] flex flex-col md:flex-row items-center justify-center mt-[25vh] mx-[10%]">
+          <h2 className="text-center md:text-left max-w-xl">
+            <h2 className="text-xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
+              Best tech Bootcamp in Addis Ababa.
+            </h2>
+            <p className="text-lg md:text-xl text-gray-900">
+              Programs designed & delivered by experts with over 13 years of
+              experience.
+            </p>
+
+            <p className="text-lg md:text-lg text-gray-500 mt-5">
+              Skilful makes your dream career possible, no matter your academic
+              background or skill level. We’re committed to providing a
+              welcoming, diverse and flexible learning environment. Our online
+              part-time and full-time programs give you the same outcome.
+            </p>
+          </h2>
+          <img
+            className="hidden md:block max-h-[100%] rounded-[30px] shadow-xl ml-[5%]"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
+            alt=""
+          />
+        </section>
+
+        {/* Count Section */}
+        <CountSection />
+
         {/* Feature */}
-        <section className="relative">
+        {/* <section className="relative">
           <div
             className="
           absolute
@@ -544,10 +533,202 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section> */}
+
+        {/* Why Us */}
+        <section className="relative mb-[200px] mx-[10%]">
+          <div
+            className="
+          absolute
+          left-1/2
+          transform
+          -translate-x-1/2
+          bottom-0
+          pointer-events-none
+          -mb-32
+        "
+            aria-hidden="true"
+          >
+            <svg
+              width={1760}
+              height={518}
+              viewBox="0 0 1760 518"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  x1="50%"
+                  y1="0%"
+                  x2="50%"
+                  y2="100%"
+                  id="illustration-02"
+                >
+                  <stop stopColor="#FFF" offset="0%" />
+                  <stop stopColor="#EAEAEA" offset="77.402%" />
+                  <stop stopColor="#DFDFDF" offset="100%" />
+                </linearGradient>
+              </defs>
+              <g
+                transform="translate(0 -3)"
+                fill="url(#illustration-02)"
+                fillRule="evenodd"
+              >
+                <circle cx={1630} cy={128} r={128} />
+                <circle cx={178} cy={481} r={40} />
+              </g>
+            </svg>
+          </div>
+          <div className="max-w-6xl mt-[150px] mx-auto px-4 sm:px-6">
+            <div className="py-12 md:py-5">
+              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+                <h2 className="h2 mb-4 text-2xl md:text-5xl">
+                  Why Skillfull ?
+                </h2>
+                <p className="text-xl text-gray-600" data-aos="zoom-y-out">
+                  Why should you choose us...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="border-r-[3px] mx-5">
+              <h1 className="text-2xl mb-3">Programs Quality</h1>
+
+              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
+                {`No BS in Skilful. No unnecessary lessons, we know the industry
+                well enough, we going to help you to be a globally qualified
+                professional,& ready for the job market as fast as possible.`}
+              </p>
+            </div>
+            <div className="border-r-[3px] mx-5">
+              <h1 className="text-2xl mb-3">Learning Experience</h1>
+
+              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
+                {`Engaging courses, Live classes with instructor, one-to-one mentorship & group projects Project Based Learning `}
+              </p>
+            </div>
+            <div className="border-r-[3px] mx-5">
+              <h1 className="text-2xl mb-3">One-to-one Mentorship</h1>
+
+              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
+                {`Ask what challenges you , and get detailed feedback and reviews.
+                your mentor ensures you’re on track with your learning goals.`}
+              </p>
+            </div>
+            <div className="mx-5">
+              <h1 className="text-2xl mb-3">Global Opportunities</h1>
+
+              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
+                After completion, you will connect with fast-growing global
+                startups
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Programs */}
+        <section className="mb-[30px] max-w-5xl text-left mx-auto">
+          <h1 className="text-2xl md:text-5xl">
+            Our programs prepare you for the job market as fast as possible.
+          </h1>
+          <p className="mt-5 text-xl text-gray-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            nostrum unde ipsam quae numquam autem ipsum, beatae mollitia non id
+            repellat dolores cumque nobis dignissimos rerum expedita consequatur
+            sequi perferendis.
+          </p>
+        </section>
+
+        {/* Call to Action */}
+        <section className="relative mb-[200px] mx-[15%] mt-[70px]">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="mx-5">
+              <img
+                className="rounded-3xl mb-6"
+                src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
+                alt=""
+              />
+              <h1 className="text-2xl mb-3">{`Full-stack software dev't`}</h1>
+              <p className="text-lg text-gray-600">Online full-time</p>
+              <p className="text-lg text-gray-600">Online part-time</p>
+              <button className="mt-3 pt-[10px] pb-3 px-8 bg-gray-200 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                Learn more
+              </button>
+            </div>
+            <div className="mx-5">
+              <img
+                className="rounded-3xl mb-6"
+                src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
+                alt=""
+              />
+              <h1 className="text-2xl mb-3">{`Product design UI/UX`}</h1>
+              <p className="text-lg text-gray-600">Online full-time</p>
+              <p className="text-lg text-gray-600">Online part-time</p>
+              <button className="mt-3 pt-[10px] pb-3 px-8 bg-gray-200 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                Learn more
+              </button>
+            </div>
+            <div className="mx-5">
+              <img
+                className="rounded-3xl mb-6"
+                src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
+                alt=""
+              />
+              <h1 className="text-2xl mb-3">{`Search engine optimization`}</h1>
+              <p className="text-lg text-gray-600">Online full-time</p>
+              <p className="text-lg text-gray-600">Online part-time</p>
+              <button className="mt-3 pt-[10px] pb-3 px-8 bg-gray-200 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Call To Action */}
+        <section className="h-[300px] border flex flex-col md:flex-row items-center justify-center mx-[10%]">
+          <h2 className="text-center md:text-left max-w-xl">
+            <h2 className="text-xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
+              Don't waste your time,
+            </h2>
+            <p className="text-lg md:text-xl text-gray-900">
+              Start learning to become a globally qualified professional
+            </p>
+          </h2>
+          <div className="ml-[10%]">
+            <div>
+              <a
+                className="
+                      btn
+                      text-white
+                      bg-gray-900
+                      hover:bg-gray-700
+                      w-full
+                      sm:w-auto sm:ml-4
+                      px-8
+                      py-4
+                      flex
+                      font-[600]
+                      items-center
+                      rounded-full
+                      cursor-pointer
+                    "
+              >
+                APPLY TODAY
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Road Map */}
+        <section className="flex w-full justify-center">
+          <img
+            src="https://i0.wp.com/www.kridha.net/wp-content/uploads/2022/03/Slide1-197.jpg?fit=1280%2C720&ssl=1"
+            alt=""
+          />
         </section>
 
         {/* Testimonial */}
-        <section className="relative">
+        {/* <section className="relative">
           <div
             className="
           absolute
@@ -783,9 +964,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <Timeline />
+        {/* <Timeline /> */}
 
         {/* News */}
         <section>
@@ -981,125 +1162,124 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-
-        <footer class="bg-white dark:bg-gray-900">
-          <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
+        <footer className="bg-white dark:bg-gray-900">
+          <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
                 Company
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400">
-                <li class="mb-4">
-                  <a href="#" class=" hover:underline">
+              <ul className="text-gray-500 dark:text-gray-400">
+                <li className="mb-4">
+                  <a href="#" className=" hover:underline">
                     About
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Careers
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Brand Center
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Blog
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
                 Help center
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+              <ul className="text-gray-500 dark:text-gray-400">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Discord Server
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Twitter
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Facebook
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Contact Us
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
                 Legal
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+              <ul className="text-gray-500 dark:text-gray-400">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Privacy Policy
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Licensing
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Terms &amp; Conditions
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
                 Download
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+              <ul className="text-gray-500 dark:text-gray-400">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     iOS
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Android
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     Windows
                   </a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
                     MacOS
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="py-6 px-4 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+          <div className="py-6 px-4 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+            <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
               © 2022 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
               Reserved.
             </span>
-            <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
+            <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
               <a
                 href="#"
-                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1110,14 +1290,14 @@ export default function Home() {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <span class="sr-only">Facebook page</span>
+                <span className="sr-only">Facebook page</span>
               </a>
               <a
                 href="#"
-                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1128,28 +1308,28 @@ export default function Home() {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <span class="sr-only">Instagram page</span>
+                <span className="sr-only">Instagram page</span>
               </a>
               <a
                 href="#"
-                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                 >
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
-                <span class="sr-only">Twitter page</span>
+                <span className="sr-only">Twitter page</span>
               </a>
               <a
                 href="#"
-                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1160,14 +1340,14 @@ export default function Home() {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <span class="sr-only">GitHub account</span>
+                <span className="sr-only">GitHub account</span>
               </a>
               <a
                 href="#"
-                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1178,7 +1358,7 @@ export default function Home() {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <span class="sr-only">Dribbble account</span>
+                <span className="sr-only">Dribbble account</span>
               </a>
             </div>
           </div>

@@ -45,17 +45,20 @@ const Header = () => {
             </div>
           </div>
           <div className="flex-grow">
-            <ul className="hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center text-lg md:text-xl font-[500] text-gray-700">
-              <li>Courses</li>
-              <li>Admission</li>
-              <li>Testimonial</li>
+            <ul className="hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center text-lg md:text-lg font-[400] text-gray-700">
+              <li className="cursor-pointer">Programs</li>
+              <li className="cursor-pointer">About Us</li>
+              <li className="cursor-pointer">Contact Us</li>
             </ul>
           </div>
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
+              <li className="cursor-pointer">Call 091054235432</li>
+
               <li>
                 <div
                   className="
+                  cursor-pointer
                       border-2
                       border-black
                       font-[600]
