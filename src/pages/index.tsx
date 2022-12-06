@@ -21,7 +21,7 @@ export default function Home() {
         <Header />
 
         {/* Hero */}
-        <section className="-mt-[100px] relative h-[calc(110vh+100px)] mb-[20vh] flex flex-col bg-[#F5F147]">
+        <section className="-mt-[100px] relative h-[calc(110vh)] lg:h-[calc(110vh+100px)] lg:mb-[20vh] flex flex-col bg-[#F5F147]">
           {/* <div
             className="
           absolute
@@ -60,7 +60,7 @@ export default function Home() {
             </svg>
           </div> */}
 
-          <div className="pt-[20vh] max-w-8xl mx-auto px-4 sm:px-6 relative">
+          <div className="pt-[15vh] lg:pt-[20vh] max-w-8xl mx-auto px-4 sm:px-6 relative">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
               <div className="text-center pb-12 md:pb-16">
                 <h1
@@ -79,7 +79,10 @@ export default function Home() {
                 >
                   Become a high-paid
                   <br />
-                  <span className="font-[800] mt-3 block">
+                  <span
+                    className="text-3xl
+                md:text-6xl font-[800] mt-3 block"
+                  >
                     Freelancer in 6 months or less.
                   </span>
                 </h1>
@@ -93,7 +96,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="flex justify-center mx-[15%] mt-16">
+                <div className="flex justify-center mx-[15%] lg:mt-16">
                   <div className="hidden md:block flex-1">
                     <p className="text-md text-left overflow-hidden">
                       Program design & delivered by experts with over 13 years
@@ -113,15 +116,14 @@ export default function Home() {
                       text-white
                       bg-gray-900
                       hover:bg-gray-700
-                      w-full
                       sm:w-auto sm:ml-4
                       px-8
                       py-4
-                      flex
                       font-[600]
                       items-center
                       rounded-full
                       cursor-pointer
+                      text-center
                     "
                       >
                         APPLY TODAY
@@ -138,20 +140,20 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative mx-auto h-[420px] w-[420px] -rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
+          <div className="lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:gap-6">
+            <div className="relative mx-auto h-[420px] w-[420px] lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
               <img
                 className="absolute w-full h-full top-0 left-0"
                 src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
               />
             </div>
-            <div className="relative mx-auto h-[420px] w-[420px] overflow-hidden rounded-[25px] bg-gray-400">
+            <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] overflow-hidden rounded-[25px] bg-gray-400">
               <img
                 className="absolute w-full h-full top-0 left-0"
                 src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
               />
             </div>
-            <div className="relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
+            <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
               <img
                 className="absolute w-full h-full top-0 left-0"
                 src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
@@ -161,9 +163,9 @@ export default function Home() {
         </section>
 
         {/* Section */}
-        <section className="h-[400px] flex flex-col md:flex-row items-center justify-center mt-[25vh] mx-[10%]">
+        <section className="h-[400px] flex flex-col md:flex-row items-center justify-center mt-20 lg:mt-[25vh] mx-[10%]">
           <h2 className="text-center md:text-left max-w-xl">
-            <h2 className="text-xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
+            <h2 className="text-3xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
               Best tech Bootcamp in Addis Ababa.
             </h2>
             <p className="text-lg md:text-xl text-gray-900">
@@ -171,7 +173,7 @@ export default function Home() {
               experience.
             </p>
 
-            <p className="text-lg md:text-lg text-gray-500 mt-5">
+            <p className="text-md md:text-lg text-gray-500 mt-5">
               Skilful makes your dream career possible, no matter your academic
               background or skill level. We’re committed to providing a
               welcoming, diverse and flexible learning environment. Our online
@@ -536,7 +538,7 @@ export default function Home() {
         </section> */}
 
         {/* Why Us */}
-        <section className="relative mb-[200px] mx-[10%]">
+        <section className="relative mb-[60px] lg:mb-[200px] mx-[10%]">
           <div
             className="
           absolute
@@ -578,10 +580,10 @@ export default function Home() {
               </g>
             </svg>
           </div>
-          <div className="max-w-6xl mt-[150px] mx-auto px-4 sm:px-6">
+          <div className="max-w-6xl mt-[50px] lg:mt-[150px] mx-auto px-4 sm:px-6">
             <div className="py-12 md:py-5">
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                <h2 className="h2 mb-4 text-2xl md:text-5xl">
+              <div className="max-w-3xl mx-auto text-center pb-5 md:pb-16">
+                <h2 className="h2 mb-4 text-3xl md:text-5xl">
                   Why Skillfull ?
                 </h2>
                 <p className="text-xl text-gray-600" data-aos="zoom-y-out">
@@ -591,8 +593,10 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="border-r-[3px] mx-5">
-              <h1 className="text-2xl mb-3">Programs Quality</h1>
+            <div className="lg:border-r-[3px] mx-5">
+              <h1 className="text-xl lg:text-2xl mb-3 font-[500]">
+                Programs Quality
+              </h1>
 
               <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
                 {`No BS in Skilful. No unnecessary lessons, we know the industry
@@ -600,15 +604,19 @@ export default function Home() {
                 professional,& ready for the job market as fast as possible.`}
               </p>
             </div>
-            <div className="border-r-[3px] mx-5">
-              <h1 className="text-2xl mb-3">Learning Experience</h1>
+            <div className="lg:border-r-[3px] mx-5">
+              <h1 className="text-xl lg:text-2xl mb-3 font-[500]">
+                Learning Experience
+              </h1>
 
               <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
                 {`Engaging courses, Live classes with instructor, one-to-one mentorship & group projects Project Based Learning `}
               </p>
             </div>
-            <div className="border-r-[3px] mx-5">
-              <h1 className="text-2xl mb-3">One-to-one Mentorship</h1>
+            <div className="lg:border-r-[3px] mx-5">
+              <h1 className="text-xl lg:text-2xl mb-3 font-[500]">
+                One-to-one Mentorship
+              </h1>
 
               <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
                 {`Ask what challenges you , and get detailed feedback and reviews.
@@ -627,11 +635,11 @@ export default function Home() {
         </section>
 
         {/* Programs */}
-        <section className="mb-[30px] max-w-5xl text-left mx-auto">
+        <section className="mb-[30px] max-w-5xl text-left mx-[10%] lg:mx-0">
           <h1 className="text-2xl md:text-5xl">
             Our programs prepare you for the job market as fast as possible.
           </h1>
-          <p className="mt-5 text-xl text-gray-800">
+          <p className="mt-5 text-lg lg:text-xl text-gray-800 font-[300]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             nostrum unde ipsam quae numquam autem ipsum, beatae mollitia non id
             repellat dolores cumque nobis dignissimos rerum expedita consequatur
@@ -714,7 +722,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className="ml-[10%]">
+          <div className="lg:ml-[10%] mt-10 lg:mt-0">
             <div>
               <a
                 className="
@@ -1018,7 +1026,7 @@ export default function Home() {
               >
                 <div
                   className="
-                  pl-[5%]
+                  lg:pl-[5%]
                   flex-1
                   basis-[60%]
                 relative
@@ -1029,7 +1037,7 @@ export default function Home() {
               "
                 >
                   <div className="text-center lg:text-left lg:max-w-xl">
-                    <h3 className="text-lg md:text-xl font-[600] text-white mb-2">
+                    <h3 className="text-lg md:text-xl font-[600] text-white mb-2 text-center md:text-left">
                       Engage now subscribe to newsletter.
                     </h3>
                     <p className="text-gray-300 text-md mb-6">
@@ -1083,6 +1091,8 @@ export default function Home() {
                         px-5
                         my-3
                         mr-auto
+                        w-full
+                        lg:w-auto
                       "
                           href="#0"
                         >
@@ -1099,7 +1109,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="border w-full
+                  className="hidden lg:block rounded-2xl overflow-hidden w-full
                   basis-[40%]
                   "
                 >

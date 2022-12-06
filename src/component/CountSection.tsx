@@ -10,7 +10,7 @@ const CountSection = () => {
   return (
     <div
       ref={ref}
-      className="max-w-[1050px] w-full mt-[150px] mx-auto grid grid-cols-3 gap-6"
+      className="max-w-[1050px] w-full lg:mt-[150px] mx-auto grid md:grid-cols-3 gap-6 gap-y-10 md:gap-y-6"
     >
       {inView && (
         <>
