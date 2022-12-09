@@ -154,7 +154,7 @@ export default function Home() {
 
         {/* Section */}
         <section className="h-[400px] flex flex-col md:flex-row items-center justify-center mt-20  mx-[10%]">
-          <h2 className="text-center md:text-left max-w-xl">
+          <div className="text-center md:text-left max-w-xl">
             <h2 className="text-3xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
               Skillfull, About us
             </h2>
@@ -169,7 +169,7 @@ export default function Home() {
               welcoming, diverse and flexible learning environment. Our online
               part-time and full-time programs give you the same outcome.
             </p>
-          </h2>
+          </div>
           <img
             className="hidden md:block max-h-[100%] rounded-[30px] shadow-xl ml-[5%]"
             src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
@@ -688,14 +688,14 @@ export default function Home() {
 
         {/* Call To Action */}
         <section className="my-[100px] relative h-[300px] border flex flex-col md:flex-row items-center justify-center mx-[10%] bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
-          <h2 className="text-center md:text-left max-w-xl">
+          <div className="text-center md:text-left max-w-xl">
             <h2 className="text-xl md:text-5xl font-[800] my-0 tracking-tight mb-2">
-              Don't waste your time,
+              {"Don't waste your time,"}
             </h2>
             <p className="text-lg md:text-xl text-gray-200">
-              Start learning to become a globally qualified professional
+              {"Start learning to become a globally qualified professional"}
             </p>
-          </h2>
+          </div>
 
           <div className="hidden lg:block text-white absolute bottom-5 scale-75 right-[24%] ">
             <svg

@@ -39,7 +39,7 @@ const Header = () => {
         }
         fixed
         w-full
-        z-30
+        z-[9999]
         transition
         duration-300
         ease-in-out
@@ -50,15 +50,17 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0 mr-4">
             <div className="block" aria-label="Cruip">
-              <h2
-                className={`font-[800] text-lg md:text-xl  ${
-                  darkHeaderRoutes.includes(router.pathname)
-                    ? "text-white"
-                    : "text-gray-700"
-                } `}
-              >
-                Skillfull
-              </h2>
+              <Link href="/">
+                <h2
+                  className={`font-[800] text-lg md:text-xl cursor-pointer ${
+                    darkHeaderRoutes.includes(router.pathname)
+                      ? "text-white"
+                      : "text-gray-700"
+                  } `}
+                >
+                  Skillfull
+                </h2>
+              </Link>
             </div>
           </div>
           <div className="flex-grow">
