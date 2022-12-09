@@ -1,7 +1,11 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const router = useRouter();
   const [show, setShow] = useState(true);
+  const darkHeaderRoutes = ["/about-us"];
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
@@ -27,7 +31,12 @@ const Header = () => {
   return (
     <header
       className={`"
-        ${!show && "bg-white shadow-sm"}
+        ${
+          !show &&
+          (darkHeaderRoutes.includes(router.pathname)
+            ? "bg-black shadow-sm"
+            : "bg-white shadow-sm")
+        }
         fixed
         w-full
         z-30
@@ -41,26 +50,55 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0 mr-4">
             <div className="block" aria-label="Cruip">
-              <h2 className="font-[600]">Skillfull</h2>
+              <h2
+                className={`font-[800] text-lg md:text-xl  ${
+                  darkHeaderRoutes.includes(router.pathname)
+                    ? "text-white"
+                    : "text-gray-700"
+                } `}
+              >
+                Skillfull
+              </h2>
             </div>
           </div>
           <div className="flex-grow">
-            <ul className="hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center text-lg md:text-lg font-[400] text-gray-700">
-              <li className="cursor-pointer">Programs</li>
-              <li className="cursor-pointer">About Us</li>
-              <li className="cursor-pointer">Contact Us</li>
+            <ul
+              className={`hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center text-lg md:text-lg font-[400] ${
+                darkHeaderRoutes.includes(router.pathname)
+                  ? "text-white"
+                  : "text-gray-700"
+              } `}
+            >
+              <Link href="/programs">
+                <li className="cursor-pointer">Programs</li>
+              </Link>
+              <Link href="/about-us">
+                <li className="cursor-pointer">About Us</li>
+              </Link>
+              <Link href="/contact">
+                <li className="cursor-pointer">Contact Us</li>
+              </Link>
             </ul>
           </div>
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li className="cursor-pointer">Call 091054235432</li>
+              <li
+                className={`cursor-pointer 
+                      ${
+                        darkHeaderRoutes.includes(router.pathname)
+                          ? "text-white"
+                          : "text-black"
+                      } `}
+              >
+                Call 091054235432
+              </li>
 
               <li>
                 <div
-                  className="
+                  className={`
                   cursor-pointer
                       border-2
-                      border-black
+                      
                       font-[600]
                       rounded-md
                     btn-sm
@@ -69,19 +107,29 @@ const Header = () => {
                     py-2
                     flex
                     items-center
-                  "
+                    ${
+                      darkHeaderRoutes.includes(router.pathname)
+                        ? "text-white border-white"
+                        : "text-gray-700 border-black"
+                    } 
+                  `}
                 >
                   <span>Sign in</span>
                   <svg
-                    className="
+                    className={`
                       w-3
                       h-3
                       fill-current
-                      text-gray-800
+                      
                       flex-shrink-0
                       ml-2
                       -mr-1
-                    "
+                      ${
+                        darkHeaderRoutes.includes(router.pathname)
+                          ? "text-gray-800"
+                          : "text-gray-100"
+                      } 
+                    `}
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >
