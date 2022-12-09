@@ -2,6 +2,7 @@ import { useAmp } from "next/amp";
 import Head from "next/head";
 import Image from "next/image";
 import MotionView from "../component/animation/MotionView";
+import MotionViewHorizontal from "../component/animation/MotionViewHorizontal";
 import CountSection from "../component/CountSection";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
@@ -62,7 +63,7 @@ export default function Home() {
             </svg>
           </div> */}
 
-          <MotionView>
+          <MotionView down>
             <div className="pt-[15vh] lg:pt-[20vh] max-w-8xl mx-auto px-4 sm:px-6 relative">
               <div className="pt-32 pb-12 md:pt-40 md:pb-20">
                 <div className="text-center pb-12 md:pb-16">
@@ -144,51 +145,58 @@ export default function Home() {
               </div>
             </div>
           </MotionView>
-          <div className="lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:gap-6">
-            <div className="relative mx-auto h-[420px] w-[420px] lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
-              <img
-                className="absolute w-full h-full top-0 left-0"
-                src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
-              />
+          <MotionView>
+            <div className="lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:gap-6">
+              <div className="relative mx-auto h-[420px] w-[420px] lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
+                <img
+                  className="absolute w-full h-full top-0 left-0"
+                  src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
+                />
+              </div>
+              <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] overflow-hidden rounded-[25px] bg-gray-400">
+                <img
+                  className="absolute w-full h-full top-0 left-0"
+                  src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
+                />
+              </div>
+              <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
+                <img
+                  className="absolute w-full h-full top-0 left-0"
+                  src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
+                />
+              </div>
             </div>
-            <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] overflow-hidden rounded-[25px] bg-gray-400">
-              <img
-                className="absolute w-full h-full top-0 left-0"
-                src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
-              />
-            </div>
-            <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
-              <img
-                className="absolute w-full h-full top-0 left-0"
-                src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
-              />
-            </div>
-          </div>
+          </MotionView>
         </section>
 
         {/* Section */}
         <section className="h-[400px] flex flex-col md:flex-row items-center justify-center mt-20 lg:mt-[25vh] mx-[10%]">
-          <div className="text-center md:text-left max-w-xl">
-            <h2 className="text-3xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
-              Best tech Bootcamp in Addis Ababa.
-            </h2>
-            <p className="text-lg md:text-xl text-gray-900">
-              Programs designed & delivered by experts with over 13 years of
-              experience.
-            </p>
+          <MotionViewHorizontal>
+            <div className="text-center md:text-left max-w-xl">
+              <h2 className="text-3xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
+                Best tech Bootcamp in Addis Ababa.
+              </h2>
+              <p className="text-lg md:text-xl text-gray-900">
+                Programs designed & delivered by experts with over 13 years of
+                experience.
+              </p>
 
-            <p className="text-md md:text-lg text-gray-500 mt-5">
-              Skilful makes your dream career possible, no matter your academic
-              background or skill level. We’re committed to providing a
-              welcoming, diverse and flexible learning environment. Our online
-              part-time and full-time programs give you the same outcome.
-            </p>
-          </div>
-          <img
-            className="hidden md:block max-h-[100%] rounded-[30px] shadow-xl ml-[5%]"
-            src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
-            alt=""
-          />
+              <p className="text-md md:text-lg text-gray-500 mt-5">
+                Skilful makes your dream career possible, no matter your
+                academic background or skill level. We’re committed to providing
+                a welcoming, diverse and flexible learning environment. Our
+                online part-time and full-time programs give you the same
+                outcome.
+              </p>
+            </div>
+          </MotionViewHorizontal>
+          <MotionView none>
+            <img
+              className="hidden md:block max-h-[100%] rounded-[30px] shadow-xl ml-[5%]"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
+              alt=""
+            />
+          </MotionView>
         </section>
 
         {/* Count Section */}
@@ -585,16 +593,18 @@ export default function Home() {
             </svg>
           </div>
           <div className="max-w-6xl mt-[50px] lg:mt-[150px] mx-auto px-4 sm:px-6">
-            <div className="py-12 md:py-5">
-              <div className="max-w-3xl mx-auto text-center pb-5 md:pb-16">
-                <h2 className="h2 mb-4 text-3xl md:text-5xl">
-                  Why Skillfull ?
-                </h2>
-                <p className="text-xl text-gray-600" data-aos="zoom-y-out">
-                  Why should you choose us...
-                </p>
+            <MotionView>
+              <div className="py-12 md:py-5">
+                <div className="max-w-3xl mx-auto text-center pb-5 md:pb-16">
+                  <h2 className="h2 mb-4 text-3xl md:text-5xl">
+                    Why Skillfull ?
+                  </h2>
+                  <p className="text-xl text-gray-600" data-aos="zoom-y-out">
+                    Why should you choose us...
+                  </p>
+                </div>
               </div>
-            </div>
+            </MotionView>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="lg:border-r-[3px] mx-5">

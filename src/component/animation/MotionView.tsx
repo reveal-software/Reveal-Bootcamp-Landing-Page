@@ -1,10 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const MotionView = ({ children }: any) => {
+const MotionView = ({ children, down, none }: any) => {
   return (
     <motion.div
-      initial={{ position: "relative", opacity: 0, top: -50 }}
+      initial={{
+        position: "relative",
+        opacity: 0,
+        top: none ? 0 : down ? -50 : 50
+      }}
       transition={{
         duration: 0.7
       }}
