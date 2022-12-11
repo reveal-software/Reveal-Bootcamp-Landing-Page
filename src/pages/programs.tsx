@@ -80,9 +80,9 @@ export default function Programs() {
               "
                     data-aos="zoom-y-out"
                   >
-                    Become a high-paid
+                    Become a highly-paid global
                     <br />
-                    Freelancer in 6 months or less.
+                    software developer in 8 months or less.
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p

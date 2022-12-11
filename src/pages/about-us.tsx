@@ -85,7 +85,9 @@ export default function Home() {
                 mb-4
                 z-[99]
               "
-                    data-aos="zoom-y-out"
+                    style={{
+                      fontFamily: "League Spartan !important"
+                    }}
                   >
                     We are the best
                     <br />
@@ -161,7 +163,12 @@ export default function Home() {
           <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
             <MotionViewHorizontal>
               <div className="text-center md:text-left max-w-[64%] xl:max-w-[90%]">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-[800] my-0 tracking-tight mb-5">
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-[800] my-0 tracking-tight mb-5"
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
                   Skillfull, About us
                 </h2>
                 <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-900">

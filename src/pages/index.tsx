@@ -79,15 +79,17 @@ export default function Home() {
                 mb-4
                 z-[99]
               "
-                    data-aos="zoom-y-out"
+                    style={{
+                      fontFamily: "League Spartan !important"
+                    }}
                   >
-                    Become a high-paid
+                    Become a highly-paid global
                     <br />
-                    Freelancer in 6 months or less.
+                    software developer in 8 months or less.
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p
-                      className="text-xl lg:text-2xl xl:text-3xl xl:mt-10 text-gray-600 mb-8"
+                      className="text-xl lg:text-2xl xl:text-3xl xl:mt-10 text-black mb-8"
                       data-aos="zoom-y-out"
                       data-aos-delay={150}
                     >
@@ -97,10 +99,21 @@ export default function Home() {
 
                   <div className="flex justify-center mx-[15%] lg:mt-16">
                     <div className="hidden md:block flex-1">
+                      <div className="flex items-center">
+                        <div className="left">
+                          <img
+                            className="max-w-[80px]"
+                            src="https://static.thenounproject.com/png/1394146-200.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 className="ml-5 text-xl xl:text-2xl font-[800]">
+                          Project Based Learning
+                        </h3>
+                      </div>
                       <p className="text-md lg:text-lg xl:text-2xl text-left overflow-hidden">
-                        Program design & delivered by experts with over 13 years
-                        of experience. Learn in-demand skills & change your
-                        lifestyle
+                        You will build a real-world full product throughout the
+                        journey.
                       </p>
                     </div>
                     <div
@@ -132,10 +145,22 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    <div className="hidden md:flex flex-1">
-                      <p className="text-left ml-2 lg:text-lg xl:text-2xl ">
-                        Project Based Learning, you will build a real-world full
-                        product throughout the journey One-to-One Mentorship
+                    <div className="hidden md:block flex-1">
+                      <div className="flex items-center">
+                        <h3 className="mr-5 text-xl xl:text-2xl font-[800]">
+                          Project Based Learning
+                        </h3>
+                        <div className="left">
+                          <img
+                            className="max-w-[80px]"
+                            src="http://cdn.onlinewebfonts.com/svg/img_289788.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p className="text-md lg:text-lg xl:text-2xl text-left overflow-hidden">
+                        Your mentor ensures you’re on track with your learning
+                        goals.
                       </p>
                     </div>
                   </div>
@@ -169,12 +194,17 @@ export default function Home() {
         </section>
 
         {/* Container */}
-        <div className=" mx-[2%] md:mx-[10%] lg:mx-[10%]">
+        <div className=" mx-[2%] md:mx-[10%] lg:mx-[10%] mt-[100px]">
           {/* Section */}
           <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
             <MotionViewHorizontal>
               <div className="text-center md:text-left max-w-[70%] xl:max-w-[90%]">
-                <h2 className="text-3xl md:text-5xl lg:text-5xl xl:text-7xl font-[800] my-0 tracking-tight mb-5">
+                <h2
+                  className="text-3xl md:text-5xl lg:text-5xl xl:text-7xl font-[800] my-0 tracking-tight mb-5"
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
                   Best tech Bootcamp in Addis Ababa.
                 </h2>
                 <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-900">
@@ -182,7 +212,7 @@ export default function Home() {
                   experience.
                 </p>
 
-                <p className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-500 mt-5">
+                <p className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-700 mt-5">
                   Skilful makes your dream career possible, no matter your
                   academic background or skill level. We’re committed to
                   providing a welcoming, diverse and flexible learning

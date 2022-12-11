@@ -63,9 +63,9 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-grow">
+          <div className="flex-grow justify-center w-auto">
             <ul
-              className={`hidden md:flex flex-grow justify-end flex-wrap space-x-5 items-center text-lg md:text-lg font-[400] ${
+              className={`hidden md:flex flex-grow justify-center flex-wrap space-x-5 items-center text-lg md:text-lg font-[400] ${
                 darkHeaderRoutes.includes(router.pathname)
                   ? "text-white"
                   : "text-gray-700"
@@ -88,10 +88,10 @@ const Header = () => {
               </Link>
             </ul>
           </div>
-          <nav className="flex flex-grow">
+          <nav className="flex">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li
-                className={`cursor-pointer  lg:text-xl xl:text-2xl
+                className={`cursor-pointer  lg:text-lg xl:text-2xl
                       ${
                         darkHeaderRoutes.includes(router.pathname)
                           ? "text-white"
