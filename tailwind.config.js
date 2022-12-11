@@ -29,6 +29,13 @@ module.exports = {
         "Helvetica Neue",
         "sans-serif"
       ]
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1880px",
+      "2xl": "2136px"
     }
   },
   plugins: []

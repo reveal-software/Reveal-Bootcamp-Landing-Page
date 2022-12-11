@@ -72,20 +72,26 @@ const Header = () => {
               } `}
             >
               <Link href="/programs">
-                <li className="cursor-pointer">Programs</li>
+                <li className="cursor-pointer lg:text-lg xl:text-2xl">
+                  Programs
+                </li>
               </Link>
               <Link href="/about-us">
-                <li className="cursor-pointer">About Us</li>
+                <li className="cursor-pointer lg:text-lg xl:text-2xl">
+                  About Us
+                </li>
               </Link>
               <Link href="/contact">
-                <li className="cursor-pointer">Contact Us</li>
+                <li className="cursor-pointer lg:text-lg xl:text-2xl">
+                  Contact Us
+                </li>
               </Link>
             </ul>
           </div>
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li
-                className={`cursor-pointer 
+                className={`cursor-pointer  lg:text-xl xl:text-2xl
                       ${
                         darkHeaderRoutes.includes(router.pathname)
                           ? "text-white"
@@ -99,15 +105,18 @@ const Header = () => {
                 <div
                   className={`
                   cursor-pointer
-                      border-2
-                      
-                      font-[600]
-                      rounded-md
+                    border-2
+                    font-[600]
+                    rounded-md
                     btn-sm
                     ml-3
+                    xl:ml-5
                     px-4
                     py-2
+                    xl:px-6
+                    xl:py-2
                     flex
+                    lg:text-xl
                     items-center
                     ${
                       darkHeaderRoutes.includes(router.pathname)
@@ -122,14 +131,13 @@ const Header = () => {
                       w-3
                       h-3
                       fill-current
-                      
                       flex-shrink-0
                       ml-2
                       -mr-1
                       ${
                         darkHeaderRoutes.includes(router.pathname)
-                          ? "text-gray-800"
-                          : "text-gray-100"
+                          ? "text-gray-100"
+                          : "text-gray-800"
                       } 
                     `}
                     viewBox="0 0 12 12"

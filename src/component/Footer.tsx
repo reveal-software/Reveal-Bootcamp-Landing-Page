@@ -5,46 +5,61 @@ const Footer = () => {
     <footer className="bg-gray-100 dark:bg-gray-700">
       <div className="grid grid-cols-2 gap-8 pb-2 pt-16 px-6 md:grid-cols-4 mx-[2%] md:mx-[10%] lg:mx-[15%]">
         <div className="col-span-2">
-          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl font-bold text-gray-800 dark:text-gray-200">
+          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200">
             The champion school texas
           </h2>
           <ul className="text-gray-500 dark:text-gray-400">
             <li className="mb-4">
-              <a href="#" className="hover:underline">
+              <a
+                href="#"
+                className="hover:underline md:text-lg lg:text-xl xl:text-2xl"
+              >
                 Bole Addis Ababa, Ethiopia
               </a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl font-bold text-gray-800 dark:text-gray-200">
+          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200">
             Main Office
           </h2>
           <ul className="text-gray-500 dark:text-gray-400">
             <li className="mb-4">
-              <a href="#" className="hover:underline">
+              <a
+                href="#"
+                className="hover:underline  md:text-lg lg:text-xl xl:text-2xl"
+              >
                 +465 365 436 543
               </a>
             </li>
             <li className="mb-4">
-              <a href="#" className="hover:underline">
+              <a
+                href="#"
+                className="hover:underline  md:text-lg lg:text-xl xl:text-2xl"
+              >
                 8:00 AM - 4:00 PM
               </a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl font-bold text-gray-800 dark:text-gray-200">
+          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200">
             Attendance
           </h2>
           <ul className="text-gray-500 dark:text-gray-400">
             <li className="mb-4">
-              <a href="#" className="hover:underline">
+              <a
+                href="#"
+                className="hover:underline md:text-lg lg:text-xl xl:text-2xl"
+              >
                 +16 53 543 6543
               </a>
             </li>
             <li className="mb-4">
-              <a href="#" className="hover:underline">
+              <a
+                href="#"
+                className="hover:underline md:text-lg lg:text-xl xl:text-2xl"
+              >
                 mail@example.com
               </a>
             </li>
@@ -52,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-6 md:flex md:items-center md:justify-between px-[2%] md:px-[10%] lg:px-[15%]">
-        <span className="text-lg md:text-xl font-[800] text-black dark:text-white sm:text-center">
+        <span className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-[800] text-black dark:text-white sm:text-center">
           Skillfull
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
@@ -61,7 +76,7 @@ const Footer = () => {
             className="text-gray-600 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
-              className="w-5 h-5"
+              className="w-5 h-5 lg:w-8 lg:h-8"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -79,7 +94,7 @@ const Footer = () => {
             className="text-gray-600 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
-              className="w-5 h-5"
+              className="w-5 h-5 lg:w-8 lg:h-8"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -97,7 +112,7 @@ const Footer = () => {
             className="text-gray-600 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
-              className="w-5 h-5"
+              className="w-5 h-5 lg:w-8 lg:h-8"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"

@@ -1,13 +1,13 @@
 import { useAmp } from "next/amp";
 import Head from "next/head";
 import Image from "next/image";
-import MotionView from "../component/animation/MotionView";
-import MotionViewHorizontal from "../component/animation/MotionViewHorizontal";
-import CountSection from "../component/CountSection";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Timeline from "../component/Timeline";
 import { useAppState } from "../store/useAppState";
+import CountSection from "../component/CountSection";
+import MotionView from "../component/animation/MotionView";
+import MotionViewHorizontal from "../component/animation/MotionViewHorizontal";
 
 export default function Home() {
   const { theme } = useAppState();
@@ -70,7 +70,7 @@ export default function Home() {
                   <h1
                     className="
                 text-4xl
-                md:text-6xl
+                md:text-5xl
                 lg:text-7xl
                 xl:text-8xl
                 font-extrabold
@@ -83,16 +83,11 @@ export default function Home() {
                   >
                     Become a high-paid
                     <br />
-                    <span
-                      className="text-3xl
-                md:text-6xl font-[800] mt-3 block"
-                    >
-                      Freelancer in 6 months or less.
-                    </span>
+                    Freelancer in 6 months or less.
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p
-                      className="text-xl text-gray-600 mb-8"
+                      className="text-xl lg:text-2xl xl:text-3xl xl:mt-10 text-gray-600 mb-8"
                       data-aos="zoom-y-out"
                       data-aos-delay={150}
                     >
@@ -102,14 +97,14 @@ export default function Home() {
 
                   <div className="flex justify-center mx-[15%] lg:mt-16">
                     <div className="hidden md:block flex-1">
-                      <p className="text-md text-left overflow-hidden">
+                      <p className="text-md lg:text-lg xl:text-2xl text-left overflow-hidden">
                         Program design & delivered by experts with over 13 years
                         of experience. Learn in-demand skills & change your
                         lifestyle
                       </p>
                     </div>
                     <div
-                      className="flex-grow flex-5 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+                      className="flex-grow flex-5 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center xl:mt-8"
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
@@ -123,6 +118,9 @@ export default function Home() {
                       sm:w-auto sm:ml-4
                       px-8
                       py-4
+                      xl:px-16
+                      xl:py-8
+                      xl:text-xl
                       font-[600]
                       items-center
                       rounded-full
@@ -135,7 +133,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="hidden md:flex flex-1">
-                      <p className="text-left ml-2">
+                      <p className="text-left ml-2 lg:text-lg xl:text-2xl ">
                         Project Based Learning, you will build a real-world full
                         product throughout the journey One-to-One Mentorship
                       </p>
@@ -145,65 +143,95 @@ export default function Home() {
               </div>
             </div>
           </MotionView>
+
           <MotionView>
             <div className="lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:gap-6">
-              <div className="relative mx-auto h-[420px] w-[420px] lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
+              <div className="relative mx-auto h-[380px] w-[380px] xl:h-[520px] xl:w-[520px]  lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
                 <img
                   className="absolute w-full h-full top-0 left-0"
-                  src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKRgyzVC-P2Q3BeqXpYI0RtuQ-6TI_4cGdjn_DqHuzMM771Au7krHoqt9-DWl-N1ahbc&usqp=CAU"
                 />
               </div>
-              <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] overflow-hidden rounded-[25px] bg-gray-400">
+              <div className="hidden lg:block relative mx-auto h-[380px] w-[380px] xl:h-[520px] xl:w-[520px]  overflow-hidden rounded-[25px] bg-gray-400">
                 <img
                   className="absolute w-full h-full top-0 left-0"
-                  src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKRgyzVC-P2Q3BeqXpYI0RtuQ-6TI_4cGdjn_DqHuzMM771Au7krHoqt9-DWl-N1ahbc&usqp=CAU"
                 />
               </div>
-              <div className="hidden lg:block relative mx-auto h-[420px] w-[420px] rotate-[7deg] mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
+              <div className="hidden lg:block relative mx-auto h-[380px] w-[380px] xl:h-[520px] xl:w-[520px]  rotate-[7deg] mt-[30px] overflow-hidden rounded-[30px] bg-gray-400">
                 <img
                   className="absolute w-full h-full top-0 left-0"
-                  src="https://t4.ftcdn.net/jpg/02/65/14/65/360_F_265146516_7FGauCt8z8oWlo9Mcy1EUGFNnPmcdZJb.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKRgyzVC-P2Q3BeqXpYI0RtuQ-6TI_4cGdjn_DqHuzMM771Au7krHoqt9-DWl-N1ahbc&usqp=CAU"
                 />
               </div>
             </div>
           </MotionView>
         </section>
 
-        {/* Section */}
-        <section className="h-[400px] flex flex-col md:flex-row items-center justify-center mt-20 lg:mt-[25vh] mx-[10%]">
-          <MotionViewHorizontal>
-            <div className="text-center md:text-left max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-[800] my-0 tracking-tight mb-5">
-                Best tech Bootcamp in Addis Ababa.
-              </h2>
-              <p className="text-lg md:text-xl text-gray-900">
-                Programs designed & delivered by experts with over 13 years of
-                experience.
-              </p>
+        {/* Container */}
+        <div className=" mx-[2%] md:mx-[10%] lg:mx-[10%]">
+          {/* Section */}
+          <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
+            <MotionViewHorizontal>
+              <div className="text-center md:text-left max-w-[70%] xl:max-w-[90%]">
+                <h2 className="text-3xl md:text-5xl lg:text-5xl xl:text-7xl font-[800] my-0 tracking-tight mb-5">
+                  Best tech Bootcamp in Addis Ababa.
+                </h2>
+                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-900">
+                  Programs designed & delivered by experts with over 13 years of
+                  experience.
+                </p>
 
-              <p className="text-md md:text-lg text-gray-500 mt-5">
-                Skilful makes your dream career possible, no matter your
-                academic background or skill level. We’re committed to providing
-                a welcoming, diverse and flexible learning environment. Our
-                online part-time and full-time programs give you the same
-                outcome.
-              </p>
+                <p className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-500 mt-5">
+                  Skilful makes your dream career possible, no matter your
+                  academic background or skill level. We’re committed to
+                  providing a welcoming, diverse and flexible learning
+                  environment. Our online part-time and full-time programs give
+                  you the same outcome.
+                </p>
+                <div className="mt-16 -ml-5">
+                  <a
+                    className="
+                    border-4
+                    hover:bg-black
+                    hover:text-white
+                    transition-all
+                    duration-300
+                    hover:border-black
+                      sm:w-auto sm:ml-4
+                      px-8
+                      py-4
+                      xl:px-12
+                      xl:py-5
+                      xl:text-xl
+                      font-[600]
+                      items-center
+                      rounded-full
+                      cursor-pointer
+                      text-center
+                    "
+                  >
+                    APPLY TODAY
+                  </a>
+                </div>
+              </div>
+            </MotionViewHorizontal>
+            <div className="w-[160%] xl:w-[120%]">
+              <MotionView none>
+                <img
+                  className="w-full h-full border hidden md:block max-h-[100%] rounded-[30px] ml-[5%]"
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
+                  alt=""
+                />
+              </MotionView>
             </div>
-          </MotionViewHorizontal>
-          <MotionView none>
-            <img
-              className="hidden md:block max-h-[100%] rounded-[30px] shadow-xl ml-[5%]"
-              src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
-              alt=""
-            />
-          </MotionView>
-        </section>
+          </section>
 
-        {/* Count Section */}
-        <CountSection />
+          {/* Count Section */}
+          <CountSection />
 
-        {/* Feature */}
-        {/* <section className="relative">
+          {/* Feature */}
+          {/* <section className="relative">
           <div
             className="
           absolute
@@ -549,10 +577,10 @@ export default function Home() {
           </div>
         </section> */}
 
-        {/* Why Us */}
-        <section className="relative mb-[60px] lg:mb-[200px] mx-[10%]">
-          <div
-            className="
+          {/* Why Us */}
+          <section className="relative mb-[60px] lg:mb-[200px]">
+            <div
+              className="
           absolute
           left-1/2
           transform
@@ -561,179 +589,196 @@ export default function Home() {
           pointer-events-none
           -mb-32
         "
-            aria-hidden="true"
-          >
-            <svg
-              width={1760}
-              height={518}
-              viewBox="0 0 1760 518"
-              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
-              <defs>
-                <linearGradient
-                  x1="50%"
-                  y1="0%"
-                  x2="50%"
-                  y2="100%"
-                  id="illustration-02"
-                >
-                  <stop stopColor="#FFF" offset="0%" />
-                  <stop stopColor="#EAEAEA" offset="77.402%" />
-                  <stop stopColor="#DFDFDF" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g
-                transform="translate(0 -3)"
-                fill="url(#illustration-02)"
-                fillRule="evenodd"
+              <svg
+                width={1760}
+                height={518}
+                viewBox="0 0 1760 518"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <circle cx={1630} cy={128} r={128} />
-                <circle cx={178} cy={481} r={40} />
-              </g>
-            </svg>
-          </div>
-          <div className="max-w-6xl mt-[50px] lg:mt-[150px] mx-auto px-4 sm:px-6">
-            <MotionView>
-              <div className="py-12 md:py-5">
-                <div className="max-w-3xl mx-auto text-center pb-5 md:pb-16">
-                  <h2 className="h2 mb-4 text-3xl md:text-5xl">
-                    Why Skillfull ?
-                  </h2>
-                  <p className="text-xl text-gray-600" data-aos="zoom-y-out">
-                    Why should you choose us...
-                  </p>
+                <defs>
+                  <linearGradient
+                    x1="50%"
+                    y1="0%"
+                    x2="50%"
+                    y2="100%"
+                    id="illustration-02"
+                  >
+                    <stop stopColor="#FFF" offset="0%" />
+                    <stop stopColor="#EAEAEA" offset="77.402%" />
+                    <stop stopColor="#DFDFDF" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <g
+                  transform="translate(0 -3)"
+                  fill="url(#illustration-02)"
+                  fillRule="evenodd"
+                >
+                  <circle cx={1630} cy={128} r={128} />
+                  <circle cx={178} cy={481} r={40} />
+                </g>
+              </svg>
+            </div>
+            <div className="max-w-6xl mt-[50px] lg:mt-[150px] mx-auto px-4 sm:px-6">
+              <MotionView>
+                <div className="py-12 md:py-5">
+                  <div className="max-w-3xl mx-auto text-center pb-5 md:pb-16">
+                    <h2 className="h2 mb-4 text-3xl md:text-5xl xl:text-6xl">
+                      Why Skillfull ?
+                    </h2>
+                    <p
+                      className="text-xl xl:text-3xl text-gray-600"
+                      data-aos="zoom-y-out"
+                    >
+                      Why should you choose us...
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </MotionView>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="lg:border-r-[3px] mx-5">
-              <h1 className="text-xl lg:text-2xl mb-3 font-[500]">
-                Programs Quality
-              </h1>
+              </MotionView>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 z-[999] relative">
+              <div className="lg:border-r-[3px] mx-5">
+                <h1 className="text-xl lg:text-2xl xl:text-3xl lg:text-2xl mb-3 font-[500]">
+                  Programs Quality
+                </h1>
 
-              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
-                {`No BS in Skilful. No unnecessary lessons, we know the industry
+                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                  {`No BS in Skilful. No unnecessary lessons, we know the industry
                 well enough, we going to help you to be a globally qualified
                 professional,& ready for the job market as fast as possible.`}
-              </p>
-            </div>
-            <div className="lg:border-r-[3px] mx-5">
-              <h1 className="text-xl lg:text-2xl mb-3 font-[500]">
-                Learning Experience
-              </h1>
+                </p>
+              </div>
+              <div className="lg:border-r-[3px] mx-5">
+                <h1 className="text-xl lg:text-2xl xl:text-3xl lg:text-2xl mb-3 font-[500]">
+                  Learning Experience
+                </h1>
 
-              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
-                {`Engaging courses, Live classes with instructor, one-to-one mentorship & group projects Project Based Learning `}
-              </p>
-            </div>
-            <div className="lg:border-r-[3px] mx-5">
-              <h1 className="text-xl lg:text-2xl mb-3 font-[500]">
-                One-to-one Mentorship
-              </h1>
+                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                  {`Engaging courses, Live classes with instructor, one-to-one mentorship & group projects Project Based Learning `}
+                </p>
+              </div>
+              <div className="lg:border-r-[3px] mx-5">
+                <h1 className="text-xl lg:text-2xl xl:text-3xl lg:text-2xl mb-3 font-[500]">
+                  One-to-one Mentorship
+                </h1>
 
-              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
-                {`Ask what challenges you , and get detailed feedback and reviews.
+                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                  {`Ask what challenges you , and get detailed feedback and reviews.
                 your mentor ensures you’re on track with your learning goals.`}
-              </p>
-            </div>
-            <div className="mx-5">
-              <h1 className="text-2xl mb-3">Global Opportunities</h1>
+                </p>
+              </div>
+              <div className="mx-5">
+                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">
+                  Global Opportunities
+                </h1>
 
-              <p className="text-gray-800 pr-5" data-aos="zoom-y-out">
-                After completion, you will connect with fast-growing global
-                startups
-              </p>
+                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                  After completion, you will connect with fast-growing global
+                  startups
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Programs */}
-        <section className="mb-[30px] max-w-5xl text-left mx-[10%] lg:mx-auto">
-          <h1 className="text-2xl md:text-5xl">
-            Our programs prepare you for the job market as fast as possible.
-          </h1>
-          <p className="mt-5 text-lg lg:text-xl text-gray-800 font-[300]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            nostrum unde ipsam quae numquam autem ipsum, beatae mollitia non id
-            repellat dolores cumque nobis dignissimos rerum expedita consequatur
-            sequi perferendis.
-          </p>
-        </section>
-
-        {/* Call to Action */}
-        <section className="relative mb-[100px] mx-[15%] mt-[70px]">
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="mx-5">
-              <img
-                className="rounded-3xl mb-6"
-                src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
-                alt=""
-              />
-              <h1 className="text-2xl mb-3">{`Full-stack software dev't`}</h1>
-              <p className="text-lg text-gray-600">Online full-time</p>
-              <p className="text-lg text-gray-600">Online part-time</p>
-              <button className="mt-3 pt-[10px] pb-3 px-8 bg-gray-200 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
-                Learn more
-              </button>
-            </div>
-            <div className="mx-5">
-              <img
-                className="rounded-3xl mb-6"
-                src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
-                alt=""
-              />
-              <h1 className="text-2xl mb-3">{`Product design UI/UX`}</h1>
-              <p className="text-lg text-gray-600">Online full-time</p>
-              <p className="text-lg text-gray-600">Online part-time</p>
-              <button className="mt-3 pt-[10px] pb-3 px-8 bg-gray-200 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
-                Learn more
-              </button>
-            </div>
-            <div className="mx-5">
-              <img
-                className="rounded-3xl mb-6"
-                src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
-                alt=""
-              />
-              <h1 className="text-2xl mb-3">{`Search engine optimization`}</h1>
-              <p className="text-lg text-gray-600">Online full-time</p>
-              <p className="text-lg text-gray-600">Online part-time</p>
-              <button className="mt-3 pt-[10px] pb-3 px-8 bg-gray-200 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
-                Learn more
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Call To Action */}
-        <section className="relative h-[300px] border flex flex-col md:flex-row items-center justify-center mx-[10%] bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
-          <div className="text-center md:text-left max-w-xl">
-            <h2 className="text-xl md:text-5xl font-[800] my-0 tracking-tight mb-2">
-              {"Don't waste your time,"}
-            </h2>
-            <p className="text-lg md:text-xl text-gray-200">
-              {"Start learning to become a globally qualified professional"}
+          {/* Programs */}
+          <section className="mb-[30px] max-w-5xl text-left lg:mx-auto">
+            <h1 className="text-2xl md:text-5xl xl:text-6xl">
+              Our programs prepare you for the job market as fast as possible.
+            </h1>
+            <p className="mt-5 text-lg lg:text-xl xl:text-2xl text-gray-800 font-[300]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              nostrum unde ipsam quae numquam autem ipsum, beatae mollitia non
+              id repellat dolores cumque nobis dignissimos rerum expedita
+              consequatur sequi perferendis.
             </p>
-          </div>
+          </section>
 
-          <div className="hidden lg:block text-white absolute bottom-5 scale-75 right-[24%] ">
-            <svg width="453" height="146" viewBox="0 0 453 146" fill="none">
-              <path
-                d="M206.375 93.0465C208.465 94.6242 212.025 97.0379 216.717 99.6674C221.41 102.297 227.276 105.075 233.776 107.569C240.262 110.064 247.395 112.262 254.394 114.11C261.379 115.997 268.269 117.359 274.324 118.371C302.358 122.955 331.445 121.931 358.441 113.597C385.316 105.277 410.114 89.554 428.157 67.9111C431.029 64.5669 434.454 59.7259 437.34 55.8558C438.095 54.9119 438.756 53.9814 439.39 53.1724C440.023 52.3633 440.63 51.6621 441.197 51.0957C442.316 49.99 443.273 49.4776 443.907 49.8956C445.229 50.7721 445.04 53.6982 443.422 58.2156C441.615 62.6116 438.351 68.6257 433.011 74.8017C420.255 89.9045 404.262 102.041 386.799 110.941C369.323 119.894 350.296 125.477 331.054 128.161C302.83 132.112 273.96 129.172 246.748 121.378C233.142 117.508 219.671 112.37 207.346 104.724C201.21 100.895 195.425 96.3772 190.261 91.1586C185.15 85.9401 180.673 79.8315 177.437 73.1296C174.51 67.129 172.582 60.6563 171.679 54.0084C170.789 47.3605 170.977 40.4967 172.569 33.8353C174.119 27.1739 177.329 20.8362 181.752 15.5097C186.175 10.1563 192.081 6.0435 198.473 3.48142C201.682 2.22734 204.999 1.32383 208.357 0.743993C211.715 0.177637 215.099 -0.0246163 218.457 0.00235305C225.186 0.123715 231.82 1.3508 238.118 3.44092C250.699 7.66162 262.255 15.3074 270.454 26.0951C272.355 28.6707 274.027 31.2867 275.551 34.0241C277.048 36.7615 278.383 39.5933 279.542 42.5194C280.662 45.4456 281.606 48.4527 282.347 51.5272C283.048 54.6152 283.52 57.7572 283.763 60.9395C284.181 67.2908 283.52 73.8713 281.498 80.0069C279.556 86.1694 276.401 91.9003 272.53 96.9166C264.723 107.003 254.434 114.339 243.768 120.164C238.401 123.063 232.886 125.625 227.276 127.796L218.848 130.938L214.627 132.489L210.326 133.797C170.802 146.257 128.474 148.212 87.9389 141.402C78.3783 139.892 66.8489 137.843 56.6141 134.903C54.47 134.377 52.0563 133.527 49.4402 132.664C46.8377 131.788 44.0464 130.857 41.2685 129.927C35.7803 127.864 30.3864 125.585 26.3815 123.872C23.0103 122.187 19.5313 120.42 16.1331 118.991C15.1622 118.573 14.2318 118.168 13.3553 117.791C12.4923 117.373 11.6832 116.941 10.9146 116.55C9.3773 115.741 8.02885 114.999 6.85568 114.325C4.50935 112.977 2.86422 111.871 1.90681 110.995C0.00547642 109.242 0.855 108.392 4.17223 108.19C5.62857 108.095 4.87344 106.558 8.64914 107.974C8.81096 108.028 9.1211 108.149 9.25595 108.203C20.7718 112.222 31.7079 117.777 43.3856 122.173C100.965 142.427 165.826 142.036 222.637 119.8C227.047 118.222 231.24 116.308 235.407 114.271C239.56 112.249 243.592 110.01 247.409 107.516C251.252 105.034 254.919 102.337 258.237 99.3034C261.54 96.2694 264.642 93.0195 267.137 89.3921C269.645 85.7783 271.654 81.8947 273.083 77.7954L273.987 74.6804C274.297 73.6421 274.445 72.5768 274.674 71.525C274.985 69.3944 275.241 67.2369 275.227 65.0658C275.308 60.7238 274.715 56.3413 273.582 52.0936C272.477 47.8324 270.845 43.6792 268.768 39.7686C267.662 37.6111 266.341 35.5479 264.993 33.5522C263.59 31.6374 262.134 29.7495 260.475 28.0369C257.212 24.5309 253.477 21.4564 249.445 18.6921L249.58 18.7865C245.291 16.0221 240.626 13.8376 235.785 12.2464C230.957 10.6148 225.927 9.67087 220.925 9.2933C216.192 8.96967 211.418 9.33371 206.887 10.426C202.383 11.5856 198.068 13.4331 194.427 16.1974C192.553 17.5189 190.921 19.1371 189.371 20.8092C187.874 22.5487 186.552 24.4365 185.393 26.4188C183.1 30.4102 181.603 34.8872 180.902 39.5394C179.459 48.8573 181.212 58.701 184.961 67.3717C186.849 71.7272 189.263 75.7726 192.135 79.4539C195.048 83.1757 198.324 86.5873 201.898 89.6349C202.437 90.1338 203.165 90.6328 203.934 91.1991C204.635 91.8059 205.471 92.4262 206.375 93.0465Z"
-                fill="white"
-              />
-              <path
-                d="M451.957 59.536C452.132 60.453 452.523 63.7163 452.685 65.8064C453.144 70.6339 452.807 75.6368 450.851 80.1406C450.541 80.8419 450.231 82.0824 447.278 81.2868C444.203 80.4642 442.585 79.3181 442.936 78.2933C443.745 75.7851 444.797 73.1286 444.284 70.4317C443.556 66.5616 443.529 62.7185 442.41 59.0102C442.235 58.3899 442.032 57.7696 441.83 57.1628L441.709 56.7717L441.668 56.6773L441.601 56.502C441.52 56.2728 441.399 55.9896 441.129 55.9492C440.954 55.9357 440.792 56.0435 440.67 56.1649C440.617 56.2188 440.563 56.2998 440.522 56.3672L440.468 56.4751C440.455 56.5021 440.468 56.502 440.441 56.529L438.135 58.4708C436.773 59.6305 435.398 60.7632 433.915 61.7476C431.366 63.4466 428.386 64.5119 425.689 65.9952C425.055 66.3458 424.651 67.3032 423.976 67.7077C423.41 68.0449 422.493 68.6383 421.805 68.7866C421.509 68.854 421.185 68.8944 421.023 69.1371C420.268 70.2698 419.378 69.5417 417.773 66.4268C417.423 65.7391 416.762 64.9704 416.722 64.3636C416.722 64.3366 416.708 64.2826 416.708 64.2557C416.29 61.9903 417.625 62.2735 418.38 61.6936C422.116 58.8619 425.972 56.2188 429.788 53.4949L433.335 51.0407C433.928 50.6227 434.508 50.2047 435.074 49.7597L436.207 48.8832C436.733 48.4787 437.259 48.0606 437.812 47.6831C438.985 46.847 440.293 45.9031 441.628 46.0919H441.601C442.316 45.984 443.057 45.9705 443.799 46.0784C444.5 46.1997 445.201 46.4155 445.808 46.7931C446.981 47.4943 447.952 48.5056 448.721 49.7732C449.125 50.38 449.395 51.1351 449.678 51.8633C449.948 52.578 450.271 53.3736 450.501 54.0209C451.054 55.7334 451.499 57.4055 451.701 59.0776C451.741 59.199 451.917 59.3473 451.957 59.536Z"
-                fill="white"
-              />
-            </svg>
-          </div>
+          {/* Call to Action */}
+          <section className="relative mb-[100px] mx-[13%] mt-[70px]">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="mx-5">
+                <img
+                  className="rounded-3xl mb-6"
+                  src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
+                  alt=""
+                />
+                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">{`Full-stack software dev't`}</h1>
+                <p className="text-lg xl:text-xl text-gray-600">
+                  Online full-time
+                </p>
+                <p className="text-lg xl:text-xl text-gray-600">
+                  Online part-time
+                </p>
+                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-4 lg:px-10 flex items-center justify-center lg:text-lg xl:text-xl border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                  Learn more
+                </button>
+              </div>
+              <div className="mx-5">
+                <img
+                  className="rounded-3xl mb-6"
+                  src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
+                  alt=""
+                />
+                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">{`Product design UI/UX`}</h1>
+                <p className="text-lg xl:text-xl text-gray-600">
+                  Online full-time
+                </p>
+                <p className="text-lg xl:text-xl text-gray-600">
+                  Online part-time
+                </p>
+                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-4 lg:px-10 flex items-center justify-center lg:text-lg xl:text-xl border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                  Learn more
+                </button>
+              </div>
+              <div className="mx-5">
+                <img
+                  className="rounded-3xl mb-6"
+                  src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
+                  alt=""
+                />
+                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">{`Search engine optimization`}</h1>
+                <p className="text-lg xl:text-xl text-gray-600">
+                  Online full-time
+                </p>
+                <p className="text-lg xl:text-xl text-gray-600">
+                  Online part-time
+                </p>
+                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-4 lg:px-10 flex items-center justify-center lg:text-lg xl:text-xl border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </section>
 
-          <div className="lg:ml-[10%] mt-10 lg:mt-0">
-            <div>
-              <a
-                className="
+          {/* Call To Action */}
+          <section className="relative min-h-[300px] py-[12vh] border flex flex-col md:flex-row items-center justify-evenly bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
+            <div className="text-center md:text-left max-w-xl xl:max-w-3xl">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-[800] my-0 tracking-tight mb-2">
+                {"Don't waste your time,"}
+              </h2>
+              <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-200">
+                {"Start learning to become a globally qualified professional"}
+              </p>
+            </div>
+
+            <div className="hidden lg:block text-white absolute bottom-[5vh] scale-75 xl:scale-95 right-[24%] ">
+              <svg width="453" height="146" viewBox="0 0 453 146" fill="none">
+                <path
+                  d="M206.375 93.0465C208.465 94.6242 212.025 97.0379 216.717 99.6674C221.41 102.297 227.276 105.075 233.776 107.569C240.262 110.064 247.395 112.262 254.394 114.11C261.379 115.997 268.269 117.359 274.324 118.371C302.358 122.955 331.445 121.931 358.441 113.597C385.316 105.277 410.114 89.554 428.157 67.9111C431.029 64.5669 434.454 59.7259 437.34 55.8558C438.095 54.9119 438.756 53.9814 439.39 53.1724C440.023 52.3633 440.63 51.6621 441.197 51.0957C442.316 49.99 443.273 49.4776 443.907 49.8956C445.229 50.7721 445.04 53.6982 443.422 58.2156C441.615 62.6116 438.351 68.6257 433.011 74.8017C420.255 89.9045 404.262 102.041 386.799 110.941C369.323 119.894 350.296 125.477 331.054 128.161C302.83 132.112 273.96 129.172 246.748 121.378C233.142 117.508 219.671 112.37 207.346 104.724C201.21 100.895 195.425 96.3772 190.261 91.1586C185.15 85.9401 180.673 79.8315 177.437 73.1296C174.51 67.129 172.582 60.6563 171.679 54.0084C170.789 47.3605 170.977 40.4967 172.569 33.8353C174.119 27.1739 177.329 20.8362 181.752 15.5097C186.175 10.1563 192.081 6.0435 198.473 3.48142C201.682 2.22734 204.999 1.32383 208.357 0.743993C211.715 0.177637 215.099 -0.0246163 218.457 0.00235305C225.186 0.123715 231.82 1.3508 238.118 3.44092C250.699 7.66162 262.255 15.3074 270.454 26.0951C272.355 28.6707 274.027 31.2867 275.551 34.0241C277.048 36.7615 278.383 39.5933 279.542 42.5194C280.662 45.4456 281.606 48.4527 282.347 51.5272C283.048 54.6152 283.52 57.7572 283.763 60.9395C284.181 67.2908 283.52 73.8713 281.498 80.0069C279.556 86.1694 276.401 91.9003 272.53 96.9166C264.723 107.003 254.434 114.339 243.768 120.164C238.401 123.063 232.886 125.625 227.276 127.796L218.848 130.938L214.627 132.489L210.326 133.797C170.802 146.257 128.474 148.212 87.9389 141.402C78.3783 139.892 66.8489 137.843 56.6141 134.903C54.47 134.377 52.0563 133.527 49.4402 132.664C46.8377 131.788 44.0464 130.857 41.2685 129.927C35.7803 127.864 30.3864 125.585 26.3815 123.872C23.0103 122.187 19.5313 120.42 16.1331 118.991C15.1622 118.573 14.2318 118.168 13.3553 117.791C12.4923 117.373 11.6832 116.941 10.9146 116.55C9.3773 115.741 8.02885 114.999 6.85568 114.325C4.50935 112.977 2.86422 111.871 1.90681 110.995C0.00547642 109.242 0.855 108.392 4.17223 108.19C5.62857 108.095 4.87344 106.558 8.64914 107.974C8.81096 108.028 9.1211 108.149 9.25595 108.203C20.7718 112.222 31.7079 117.777 43.3856 122.173C100.965 142.427 165.826 142.036 222.637 119.8C227.047 118.222 231.24 116.308 235.407 114.271C239.56 112.249 243.592 110.01 247.409 107.516C251.252 105.034 254.919 102.337 258.237 99.3034C261.54 96.2694 264.642 93.0195 267.137 89.3921C269.645 85.7783 271.654 81.8947 273.083 77.7954L273.987 74.6804C274.297 73.6421 274.445 72.5768 274.674 71.525C274.985 69.3944 275.241 67.2369 275.227 65.0658C275.308 60.7238 274.715 56.3413 273.582 52.0936C272.477 47.8324 270.845 43.6792 268.768 39.7686C267.662 37.6111 266.341 35.5479 264.993 33.5522C263.59 31.6374 262.134 29.7495 260.475 28.0369C257.212 24.5309 253.477 21.4564 249.445 18.6921L249.58 18.7865C245.291 16.0221 240.626 13.8376 235.785 12.2464C230.957 10.6148 225.927 9.67087 220.925 9.2933C216.192 8.96967 211.418 9.33371 206.887 10.426C202.383 11.5856 198.068 13.4331 194.427 16.1974C192.553 17.5189 190.921 19.1371 189.371 20.8092C187.874 22.5487 186.552 24.4365 185.393 26.4188C183.1 30.4102 181.603 34.8872 180.902 39.5394C179.459 48.8573 181.212 58.701 184.961 67.3717C186.849 71.7272 189.263 75.7726 192.135 79.4539C195.048 83.1757 198.324 86.5873 201.898 89.6349C202.437 90.1338 203.165 90.6328 203.934 91.1991C204.635 91.8059 205.471 92.4262 206.375 93.0465Z"
+                  fill="white"
+                />
+                <path
+                  d="M451.957 59.536C452.132 60.453 452.523 63.7163 452.685 65.8064C453.144 70.6339 452.807 75.6368 450.851 80.1406C450.541 80.8419 450.231 82.0824 447.278 81.2868C444.203 80.4642 442.585 79.3181 442.936 78.2933C443.745 75.7851 444.797 73.1286 444.284 70.4317C443.556 66.5616 443.529 62.7185 442.41 59.0102C442.235 58.3899 442.032 57.7696 441.83 57.1628L441.709 56.7717L441.668 56.6773L441.601 56.502C441.52 56.2728 441.399 55.9896 441.129 55.9492C440.954 55.9357 440.792 56.0435 440.67 56.1649C440.617 56.2188 440.563 56.2998 440.522 56.3672L440.468 56.4751C440.455 56.5021 440.468 56.502 440.441 56.529L438.135 58.4708C436.773 59.6305 435.398 60.7632 433.915 61.7476C431.366 63.4466 428.386 64.5119 425.689 65.9952C425.055 66.3458 424.651 67.3032 423.976 67.7077C423.41 68.0449 422.493 68.6383 421.805 68.7866C421.509 68.854 421.185 68.8944 421.023 69.1371C420.268 70.2698 419.378 69.5417 417.773 66.4268C417.423 65.7391 416.762 64.9704 416.722 64.3636C416.722 64.3366 416.708 64.2826 416.708 64.2557C416.29 61.9903 417.625 62.2735 418.38 61.6936C422.116 58.8619 425.972 56.2188 429.788 53.4949L433.335 51.0407C433.928 50.6227 434.508 50.2047 435.074 49.7597L436.207 48.8832C436.733 48.4787 437.259 48.0606 437.812 47.6831C438.985 46.847 440.293 45.9031 441.628 46.0919H441.601C442.316 45.984 443.057 45.9705 443.799 46.0784C444.5 46.1997 445.201 46.4155 445.808 46.7931C446.981 47.4943 447.952 48.5056 448.721 49.7732C449.125 50.38 449.395 51.1351 449.678 51.8633C449.948 52.578 450.271 53.3736 450.501 54.0209C451.054 55.7334 451.499 57.4055 451.701 59.0776C451.741 59.199 451.917 59.3473 451.957 59.536Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div className="lg:ml-[10%] mt-10 lg:mt-0">
+              <div>
+                <a
+                  className="
                 shadow-3xl
                 relative
                       btn
@@ -754,31 +799,34 @@ export default function Home() {
                       sm:w-auto sm:ml-4
                       px-8
                       py-4
+                      xl:px-12
+                      xl:py-6
+                      xl:text-xl
                       flex
                       font-[600]
                       items-center
                       rounded-full
                       cursor-pointer
                     "
-              >
-                APPLY TODAY
-              </a>
+                >
+                  APPLY TODAY
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Road Map */}
-        <section className="flex w-full justify-center my-[100px]">
-          {/* <img
+          {/* Road Map */}
+          <section className="flex w-full justify-center my-[100px]">
+            {/* <img
             src="/assets/roadmap-horizontal.jpg"
             alt=""
             className="w-[90%]"
           /> */}
-          <Timeline />
-        </section>
+            <Timeline />
+          </section>
 
-        {/* Testimonial */}
-        {/* <section className="relative">
+          {/* Testimonial */}
+          {/* <section className="relative">
           <div
             className="
           absolute
@@ -1016,14 +1064,14 @@ export default function Home() {
           </div>
         </section> */}
 
-        {/* <Timeline /> */}
+          {/* <Timeline /> */}
 
-        {/* News */}
-        <section>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pb-12 md:pb-20">
-              <div
-                className="
+          {/* News */}
+          <section>
+            <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6">
+              <div className="pb-12 md:pb-20">
+                <div
+                  className="
               relative
               bg-gray-900
               rounded
@@ -1032,9 +1080,9 @@ export default function Home() {
               shadow-2xl
               flex
             "
-              >
-                <div
-                  className="
+                >
+                  <div
+                    className="
                   lg:pl-[5%]
                   flex-1
                   basis-[60%]
@@ -1044,18 +1092,18 @@ export default function Home() {
                 justify-between
                 items-center
               "
-                >
-                  <div className="text-center lg:text-left lg:max-w-xl">
-                    <h3 className="text-lg md:text-xl font-[600] text-white mb-2 text-center md:text-left">
-                      Engage now subscribe to newsletter.
-                    </h3>
-                    <p className="text-gray-300 text-md mb-6">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit
-                      nemo expedita voluptas culpa sapiente.
-                    </p>
-                    <form className="w-full lg:w-auto">
-                      <div
-                        className="
+                  >
+                    <div className="text-center lg:text-left lg:max-w-xl">
+                      <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-[600] text-white mb-2 text-center md:text-left">
+                        Engage now subscribe to newsletter.
+                      </h3>
+                      <p className="text-gray-300 text-md lg:text-lg xl:text-xl mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        nemo expedita voluptas culpa sapiente.
+                      </p>
+                      <form className="w-full lg:w-auto">
+                        <div
+                          className="
                       flex flex-col
                       items-center
                       sm:flex-row
@@ -1065,10 +1113,10 @@ export default function Home() {
                       sm:max-w-md
                       lg:mx-0
                     "
-                      >
-                        <input
-                          type="email"
-                          className="
+                        >
+                          <input
+                            type="email"
+                            className="
                         form-input
                         w-full
                         appearance-none
@@ -1078,7 +1126,10 @@ export default function Home() {
                         rounded-sm
                         px-4
                         py-3
+                        xl:px-7
+                        xl:py-4
                         mb-2
+                        text-xl
                         h-[50px]
                         sm:mb-0 sm:mr-2
                         text-white
@@ -1086,11 +1137,11 @@ export default function Home() {
                         outline-indigo-500
                         focus:border-none
                       "
-                          placeholder="Your email…"
-                          aria-label="Your email…"
-                        />
-                        <a
-                          className="
+                            placeholder="Your email…"
+                            aria-label="Your email…"
+                          />
+                          <a
+                            className="
                         btn
                         text-white
                         bg-blue-600
@@ -1103,36 +1154,37 @@ export default function Home() {
                         w-full
                         lg:w-auto
                       "
-                          href="#0"
-                        >
-                          Subscribe
-                        </a>
-                      </div>
-                      <p className="text-sm text-gray-400 mt-3">
-                        Thanks for subscribing!
-                      </p>
-                      <p className="text-sm text-gray-400 mt-3">
-                        7 days free trial. No credit card required.
-                      </p>
-                    </form>
+                            href="#0"
+                          >
+                            Subscribe
+                          </a>
+                        </div>
+                        <p className="text-sm text-gray-400 mt-3">
+                          Thanks for subscribing!
+                        </p>
+                        <p className="text-sm text-gray-400 mt-3">
+                          7 days free trial. No credit card required.
+                        </p>
+                      </form>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className="hidden lg:block rounded-2xl overflow-hidden w-full
+                  <div
+                    className="hidden lg:block rounded-2xl overflow-hidden w-full
                   basis-[40%]
                   "
-                >
-                  <img
-                    src="https://ph-files.imgix.net/1b43a57b-3ec1-4b85-9da3-9cd9cdb8f652.png?auto=format&fit=crop"
-                    alt=""
-                  />
+                  >
+                    <img
+                      src="https://ph-files.imgix.net/1b43a57b-3ec1-4b85-9da3-9cd9cdb8f652.png?auto=format&fit=crop"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Footer */}
+          {/* Footer */}
+        </div>
         <Footer />
       </div>
     </div>

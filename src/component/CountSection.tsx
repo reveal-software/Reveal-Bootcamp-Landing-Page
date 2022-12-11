@@ -15,24 +15,30 @@ const CountSection = () => {
       {inView && (
         <>
           <div className="text-center">
-            <h1 className="text-5xl mb-2">
+            <h1 className="text-5xl xl:text-9xl xl:font-[200] mb-2">
               <CountUp end={7} duration={1} />
             </h1>
-            <h1 className="text-xl">Students Enrolled</h1>
+            <h1 className="text-xl lg:text-2xl xl:text-2xl xl:mt-4">
+              Students Enrolled
+            </h1>
           </div>
 
           <div className="text-center">
-            <h1 className="text-5xl mb-2">
+            <h1 className="text-5xl xl:text-9xl xl:font-[200] mb-2">
               <CountUp end={5} duration={2} />
             </h1>
-            <h1 className="text-xl">Instructors</h1>
+            <h1 className="text-xl lg:text-2xl xl:text-2xl xl:mt-4">
+              Instructors
+            </h1>
           </div>
 
           <div className="text-center">
-            <h1 className="text-5xl mb-2">
+            <h1 className="text-5xl xl:text-9xl xl:font-[200] mb-2">
               <CountUp end={25} duration={4} />
             </h1>
-            <h1 className="text-xl">Real World Projects</h1>
+            <h1 className="text-xl lg:text-2xl xl:text-2xl xl:mt-4">
+              Real World Projects
+            </h1>
           </div>
         </>
       )}
