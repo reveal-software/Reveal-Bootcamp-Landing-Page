@@ -69,10 +69,7 @@ export default function Home() {
                 <div className="text-center pb-12 md:pb-16">
                   <h1
                     className="
-                text-4xl
-                md:text-5xl
-                lg:text-7xl
-                xl:text-8xl
+                    large-font
                 font-extrabold
                 leading-tighter
                 tracking-tighter
@@ -89,7 +86,7 @@ export default function Home() {
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p
-                      className="text-xl lg:text-2xl xl:text-3xl xl:mt-10 text-black mb-8"
+                      className="text-xl medium-font leading-6 xl:mt-10 text-black mb-8"
                       data-aos="zoom-y-out"
                       data-aos-delay={150}
                     >
@@ -100,18 +97,23 @@ export default function Home() {
                   <div className="flex justify-center mx-[15%] lg:mt-16">
                     <div className="hidden md:block flex-1">
                       <div className="flex items-center">
-                        <div className="left">
+                        {/* <div className="left">
                           <img
                             className="max-w-[80px]"
                             src="https://static.thenounproject.com/png/1394146-200.png"
                             alt=""
                           />
-                        </div>
-                        <h3 className="ml-5 text-xl xl:text-2xl font-[800]">
+                        </div> */}
+                        <h3
+                          className="medium-font font-[800] border-b-4 pb-2 mb-2  border-green-600"
+                          style={{
+                            fontFamily: "League Spartan !important"
+                          }}
+                        >
                           Project Based Learning
                         </h3>
                       </div>
-                      <p className="text-md lg:text-lg xl:text-2xl text-left overflow-hidden">
+                      <p className="max-w-xs small-font text-left overflow-hidden">
                         You will build a real-world full product throughout the
                         journey.
                       </p>
@@ -140,28 +142,36 @@ export default function Home() {
                       cursor-pointer
                       text-center
                     "
+                          style={{
+                            fontFamily: "League Spartan !important"
+                          }}
                         >
-                          APPLY TODAY
+                          Apply Today
                         </a>
                       </div>
                     </div>
-                    <div className="hidden md:block flex-1">
-                      <div className="flex items-center">
-                        <h3 className="mr-5 text-xl xl:text-2xl font-[800]">
+                    <div className="hidden md:flex flex-1">
+                      <div className="">
+                        <img
+                          className="max-w-[40px]"
+                          src="http://cdn.onlinewebfonts.com/svg/img_289788.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="ml-6">
+                        <h3
+                          className="text-left text-xl xl:text-2xl font-[800]"
+                          style={{
+                            fontFamily: "League Spartan !important"
+                          }}
+                        >
                           Project Based Learning
                         </h3>
-                        <div className="left">
-                          <img
-                            className="max-w-[80px]"
-                            src="http://cdn.onlinewebfonts.com/svg/img_289788.png"
-                            alt=""
-                          />
-                        </div>
+                        <p className="max-w-xs text-md lg:text-sm xl:text-xl text-left overflow-hidden">
+                          Your mentor ensures you’re on track with your learning
+                          goals.
+                        </p>
                       </div>
-                      <p className="text-md lg:text-lg xl:text-2xl text-left overflow-hidden">
-                        Your mentor ensures you’re on track with your learning
-                        goals.
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -170,25 +180,25 @@ export default function Home() {
           </MotionView>
 
           <MotionView>
-            <div className="lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:gap-6">
-              <div className="relative mx-auto h-[380px] w-[380px] xl:h-[520px] xl:w-[520px]  lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400">
-                <img
-                  className="absolute w-full h-full top-0 left-0"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKRgyzVC-P2Q3BeqXpYI0RtuQ-6TI_4cGdjn_DqHuzMM771Au7krHoqt9-DWl-N1ahbc&usqp=CAU"
-                />
-              </div>
-              <div className="hidden lg:block relative mx-auto h-[380px] w-[380px] xl:h-[520px] xl:w-[520px]  overflow-hidden rounded-[25px] bg-gray-400">
-                <img
-                  className="absolute w-full h-full top-0 left-0"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKRgyzVC-P2Q3BeqXpYI0RtuQ-6TI_4cGdjn_DqHuzMM771Au7krHoqt9-DWl-N1ahbc&usqp=CAU"
-                />
-              </div>
-              <div className="hidden lg:block relative mx-auto h-[380px] w-[380px] xl:h-[520px] xl:w-[520px]  rotate-[7deg] mt-[30px] overflow-hidden rounded-[30px] bg-gray-400">
-                <img
-                  className="absolute w-full h-full top-0 left-0"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKRgyzVC-P2Q3BeqXpYI0RtuQ-6TI_4cGdjn_DqHuzMM771Au7krHoqt9-DWl-N1ahbc&usqp=CAU"
-                />
-              </div>
+            <div className="lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-3">
+              <div
+                className="relative bg-contain bg-center mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px] overflow-hidden  lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400"
+                style={{
+                  background: "url(/left-photo.jpg)"
+                }}
+              ></div>
+              <div
+                className="hidden bg-contain  lg:block relative mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  overflow-hidden rounded-[25px] bg-gray-400"
+                style={{
+                  background: "url(/left-photo.jpg)"
+                }}
+              ></div>
+              <div
+                className="hidden bg-contain  lg:block relative mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  rotate-[7deg] mt-[30px] overflow-hidden rounded-[30px] bg-gray-400"
+                style={{
+                  background: "url(/left-photo.jpg)"
+                }}
+              ></div>
             </div>
           </MotionView>
         </section>
@@ -198,21 +208,26 @@ export default function Home() {
           {/* Section */}
           <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
             <MotionViewHorizontal>
-              <div className="text-center md:text-left max-w-[70%] xl:max-w-[90%]">
+              <div className="text-center md:text-left max-w-[70%] xl:max-w-[90%] mt-5">
                 <h2
-                  className="text-3xl md:text-5xl lg:text-5xl xl:text-7xl font-[800] my-0 tracking-tight mb-5"
+                  className="medium-large-font font-[800] my-0 tracking-tight mb-5"
                   style={{
                     fontFamily: "League Spartan !important"
                   }}
                 >
                   Best tech Bootcamp in Addis Ababa.
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-900">
+                <p
+                  className="medium-font text-gray-900"
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
                   Programs designed & delivered by experts with over 13 years of
                   experience.
                 </p>
 
-                <p className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-700 mt-5">
+                <p className="small-font text-gray-700 mt-5">
                   Skilful makes your dream career possible, no matter your
                   academic background or skill level. We’re committed to
                   providing a welcoming, diverse and flexible learning
@@ -240,8 +255,11 @@ export default function Home() {
                       cursor-pointer
                       text-center
                     "
+                    style={{
+                      fontFamily: "League Spartan !important"
+                    }}
                   >
-                    APPLY TODAY
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -650,60 +668,75 @@ export default function Home() {
                 </g>
               </svg>
             </div>
-            <div className="max-w-6xl mt-[50px] lg:mt-[150px] mx-auto px-4 sm:px-6">
+            <div className="mt-[150px] lg:mt-[200px] mx-auto px-4 sm:px-6">
+              <h2
+                className="medium-large-font font-[800] my-0 tracking-tight mb-5"
+                style={{
+                  fontFamily: "League Spartan !important"
+                }}
+              >
+                Why Skillfull?
+              </h2>
               <MotionView>
                 <div className="py-12 md:py-5">
-                  <div className="max-w-3xl mx-auto text-center pb-5 md:pb-16">
-                    <h2 className="h2 mb-4 text-3xl md:text-5xl xl:text-6xl">
-                      Why Skillfull ?
-                    </h2>
-                    <p
-                      className="text-xl xl:text-3xl text-gray-600"
+                  <div className="mx-auto text-left pb-5 md:pb-16">
+                    {/* <p
+                      className="medium-font text-gray-600"
                       data-aos="zoom-y-out"
                     >
                       Why should you choose us...
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </MotionView>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 z-[999] relative">
-              <div className="lg:border-r-[3px] mx-5">
-                <h1 className="text-xl lg:text-2xl xl:text-3xl lg:text-2xl mb-3 font-[500]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 z-[999] relative">
+              <div className="lg:border-r-[3px] border-yellow-400 mx-5">
+                <h1
+                  className="medium-font mb-3 font-[500]"
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
                   Programs Quality
                 </h1>
 
-                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                <p className="text-gray-800 pr-5 small-font">
                   {`No BS in Skilful. No unnecessary lessons, we know the industry
                 well enough, we going to help you to be a globally qualified
                 professional,& ready for the job market as fast as possible.`}
                 </p>
               </div>
-              <div className="lg:border-r-[3px] mx-5">
-                <h1 className="text-xl lg:text-2xl xl:text-3xl lg:text-2xl mb-3 font-[500]">
+              {/* <div className="lg:border-r-[3px] border-yellow-400 mx-5">
+                <h1 className="medium-font mb-3 font-[500]">
                   Learning Experience
                 </h1>
 
-                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                <p className="text-gray-800 pr-5 small-font">
                   {`Engaging courses, Live classes with instructor, one-to-one mentorship & group projects Project Based Learning `}
                 </p>
-              </div>
-              <div className="lg:border-r-[3px] mx-5">
-                <h1 className="text-xl lg:text-2xl xl:text-3xl lg:text-2xl mb-3 font-[500]">
+              </div> */}
+              <div className="lg:border-r-[3px] border-yellow-400 mx-5">
+                <h1
+                  className="medium-font mb-3 font-[500]"
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
                   One-to-one Mentorship
                 </h1>
 
-                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                <p className="text-gray-800 pr-5 small-font">
                   {`Ask what challenges you , and get detailed feedback and reviews.
                 your mentor ensures you’re on track with your learning goals.`}
                 </p>
               </div>
               <div className="mx-5">
-                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">
+                <h1 className="medium-font mb-3 font-[500]">
                   Global Opportunities
                 </h1>
 
-                <p className="text-gray-800 pr-5 lg:text-lg xl:text-xl">
+                <p className="text-gray-800 pr-5 small-font">
                   After completion, you will connect with fast-growing global
                   startups
                 </p>
@@ -712,69 +745,86 @@ export default function Home() {
           </section>
 
           {/* Programs */}
-          <section className="mb-[30px] max-w-5xl text-left lg:mx-auto">
-            <h1 className="text-2xl md:text-5xl xl:text-6xl">
-              Our programs prepare you for the job market as fast as possible.
-            </h1>
-            <p className="mt-5 text-lg lg:text-xl xl:text-2xl text-gray-800 font-[300]">
+          <section className="mb-[30px] max-w-5xl text-left lg:mx-auto mt-[300px]">
+            <h2
+              className="medium-large-font font-[800] my-0 tracking-tight mb-5"
+              style={{
+                fontFamily: "League Spartan !important"
+              }}
+            >
+              Our programs{" "}
+              <span
+                className="font-[300]"
+                style={{ fontFamily: "Satisfy !important" }}
+              >
+                {" "}
+                prepare
+              </span>{" "}
+              <br />{" "}
+              <span
+                className="font-[300]"
+                style={{ fontFamily: "Satisfy !important" }}
+              >
+                you
+              </span>{" "}
+              for the job market <br /> as fast as possible{" "}
+              <span className="text-yellow-400 text-8xl leading-3 -ml-2">
+                .
+              </span>
+            </h2>
+            {/* <p className="mt-5 medium-font text-gray-800 font-[300]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
               nostrum unde ipsam quae numquam autem ipsum, beatae mollitia non
               id repellat dolores cumque nobis dignissimos rerum expedita
               consequatur sequi perferendis.
-            </p>
+            </p> */}
           </section>
 
           {/* Call to Action */}
-          <section className="relative mb-[100px] mx-[13%] mt-[70px]">
+          <section className="relative mb-[100px] mx-[13%] mt-[100px]">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="mx-5">
+              <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
                   className="rounded-3xl mb-6"
                   src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
                   alt=""
                 />
-                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">{`Full-stack software dev't`}</h1>
-                <p className="text-lg xl:text-xl text-gray-600">
-                  Online full-time
-                </p>
-                <p className="text-lg xl:text-xl text-gray-600">
-                  Online part-time
-                </p>
-                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-4 lg:px-10 flex items-center justify-center lg:text-lg xl:text-xl border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                <h1 className="medium-font font-[700] mb-3">{`Full-stack software dev't`}</h1>
+                <ul className="">
+                  <li className="small-font text-gray-600">Online full-time</li>
+                  <li className="small-font text-gray-600">Online part-time</li>
+                </ul>
+                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
                   Learn more
                 </button>
               </div>
-              <div className="mx-5">
+              <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
                   className="rounded-3xl mb-6"
                   src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
                   alt=""
                 />
-                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">{`Product design UI/UX`}</h1>
-                <p className="text-lg xl:text-xl text-gray-600">
-                  Online full-time
-                </p>
-                <p className="text-lg xl:text-xl text-gray-600">
-                  Online part-time
-                </p>
-                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-4 lg:px-10 flex items-center justify-center lg:text-lg xl:text-xl border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                <h1 className="medium-font font-[700] mb-3">{`Product design UI/UX`}</h1>
+                <ul className="">
+                  <li className="small-font text-gray-600">Online full-time</li>
+                  <li className="small-font text-gray-600">Online part-time</li>
+                </ul>
+                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
                   Learn more
                 </button>
               </div>
-              <div className="mx-5">
+              <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
                   className="rounded-3xl mb-6"
                   src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
                   alt=""
                 />
-                <h1 className="text-xl lg:text-2xl xl:text-3xl mb-3">{`Search engine optimization`}</h1>
-                <p className="text-lg xl:text-xl text-gray-600">
-                  Online full-time
-                </p>
-                <p className="text-lg xl:text-xl text-gray-600">
-                  Online part-time
-                </p>
-                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-4 lg:px-10 flex items-center justify-center lg:text-lg xl:text-xl border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[30px]">
+                <h1 className="medium-font font-[700] mb-3">{`Search engine optimization`}</h1>
+                <ul className="">
+                  <li className="small-font text-gray-600">Online full-time</li>
+                  <li className="small-font text-gray-600">Online part-time</li>
+                </ul>
+                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
                   Learn more
                 </button>
               </div>
@@ -783,13 +833,18 @@ export default function Home() {
 
           {/* Call To Action */}
           <section className="relative min-h-[300px] py-[12vh] border flex flex-col md:flex-row items-center justify-evenly bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
-            <div className="text-center md:text-left max-w-xl xl:max-w-3xl">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-[800] my-0 tracking-tight mb-2">
+            <div className="text-center md:text-left max-w-md xl:max-w-3xl">
+              <h2
+                className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-[800] my-0 tracking-tight mb-2"
+                style={{
+                  fontFamily: "League Spartan !important"
+                }}
+              >
                 {"Don't waste your time,"}
+                <br />
+                <br />
+                {" Start learning to become a globally qualified professional"}
               </h2>
-              <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-200">
-                {"Start learning to become a globally qualified professional"}
-              </p>
             </div>
 
             <div className="hidden lg:block text-white absolute bottom-[5vh] scale-75 xl:scale-95 right-[24%] ">
@@ -1097,7 +1152,7 @@ export default function Home() {
           {/* <Timeline /> */}
 
           {/* News */}
-          <section>
+          {/* <section>
             <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6">
               <div className="pb-12 md:pb-20">
                 <div
@@ -1211,7 +1266,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Footer */}
         </div>

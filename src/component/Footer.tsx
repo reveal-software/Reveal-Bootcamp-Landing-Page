@@ -5,61 +5,61 @@ const Footer = () => {
     <footer className="bg-gray-100 dark:bg-gray-700">
       <div className="grid grid-cols-2 gap-8 pb-2 pt-16 px-6 md:grid-cols-4 mx-[2%] md:mx-[10%] lg:mx-[15%]">
         <div className="col-span-2">
-          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200">
+          <h2
+            className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200"
+            style={{
+              fontFamily: "League Spartan !important"
+            }}
+          >
             The champion school texas
           </h2>
           <ul className="text-gray-500 dark:text-gray-400">
             <li className="mb-4">
-              <a
-                href="#"
-                className="hover:underline md:text-lg lg:text-xl xl:text-2xl"
-              >
+              <a href="#" className="hover:underline small-font">
                 Bole Addis Ababa, Ethiopia
               </a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200">
+          <h2
+            className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200"
+            style={{
+              fontFamily: "League Spartan !important"
+            }}
+          >
             Main Office
           </h2>
           <ul className="text-gray-500 dark:text-gray-400">
             <li className="mb-4">
-              <a
-                href="#"
-                className="hover:underline  md:text-lg lg:text-xl xl:text-2xl"
-              >
+              <a href="#" className="hover:underline  small-font">
                 +465 365 436 543
               </a>
             </li>
             <li className="mb-4">
-              <a
-                href="#"
-                className="hover:underline  md:text-lg lg:text-xl xl:text-2xl"
-              >
+              <a href="#" className="hover:underline  small-font">
                 8:00 AM - 4:00 PM
               </a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200">
+          <h2
+            className="mb-6 text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 dark:text-gray-200"
+            style={{
+              fontFamily: "League Spartan !important"
+            }}
+          >
             Attendance
           </h2>
           <ul className="text-gray-500 dark:text-gray-400">
             <li className="mb-4">
-              <a
-                href="#"
-                className="hover:underline md:text-lg lg:text-xl xl:text-2xl"
-              >
+              <a href="#" className="hover:underline small-font">
                 +16 53 543 6543
               </a>
             </li>
             <li className="mb-4">
-              <a
-                href="#"
-                className="hover:underline md:text-lg lg:text-xl xl:text-2xl"
-              >
+              <a href="#" className="hover:underline small-font">
                 mail@example.com
               </a>
             </li>

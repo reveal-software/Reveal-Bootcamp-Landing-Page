@@ -28,6 +28,24 @@ a {
   box-sizing: border-box;
 }
 
+@layer components {
+  .large-font {
+    @apply text-4xl md:text-5xl lg:text-7xl xl:text-8xl;
+  }
+
+  .medium-large-font {
+    @apply md:text-5xl lg:text-5xl xl:text-6xl;
+  }
+
+  .medium-font {
+    @apply lg:text-lg xl:text-2xl;
+  }
+
+  .small-font {
+    @apply lg:text-sm xl:text-lg;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
