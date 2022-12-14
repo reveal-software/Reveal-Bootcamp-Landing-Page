@@ -75,6 +75,7 @@ export default function Home() {
                 tracking-tighter
                 mb-4
                 z-[99]
+                text-green-900
               "
                     style={{
                       fontFamily: "League Spartan !important"
