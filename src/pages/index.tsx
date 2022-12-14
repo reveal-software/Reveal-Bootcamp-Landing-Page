@@ -782,7 +782,7 @@ export default function Home() {
           </section>
 
           {/* Call to Action */}
-          <section className="relative mb-[100px] mx-[13%] mt-[100px]">
+          <section className="hidden xl:block relative mb-[100px] mx-[13%] mt-[100px]">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
