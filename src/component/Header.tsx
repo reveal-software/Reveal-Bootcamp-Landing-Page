@@ -71,7 +71,10 @@ const Header = () => {
                   : "text-gray-700"
               } `}
             >
-              <Link href="/programs">
+              <Link href="/">
+                <li className="cursor-pointer lg:text-lg xl:text-2xl">Home</li>
+              </Link>
+              <Link href="/course-detail">
                 <li className="cursor-pointer lg:text-lg xl:text-2xl">
                   Programs
                 </li>
