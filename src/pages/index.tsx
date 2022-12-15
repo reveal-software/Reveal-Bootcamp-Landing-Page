@@ -8,6 +8,7 @@ import { useAppState } from "../store/useAppState";
 import CountSection from "../component/CountSection";
 import MotionView from "../component/animation/MotionView";
 import MotionViewHorizontal from "../component/animation/MotionViewHorizontal";
+import Link from "next/link";
 
 export default function Home() {
   const { theme } = useAppState();
@@ -798,9 +799,11 @@ export default function Home() {
                   <li className="small-font text-gray-600">Online full-time</li>
                   <li className="small-font text-gray-600">Online part-time</li>
                 </ul>
-                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
-                  Learn more
-                </button>
+                <Link href="/course-detail">
+                  <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
+                    Learn more
+                  </button>
+                </Link>
               </div>
               <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
@@ -813,9 +816,11 @@ export default function Home() {
                   <li className="small-font text-gray-600">Online full-time</li>
                   <li className="small-font text-gray-600">Online part-time</li>
                 </ul>
-                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
-                  Learn more
-                </button>
+                <Link href="/course-detail">
+                  <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
+                    Learn more
+                  </button>
+                </Link>
               </div>
               <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
@@ -828,9 +833,11 @@ export default function Home() {
                   <li className="small-font text-gray-600">Online full-time</li>
                   <li className="small-font text-gray-600">Online part-time</li>
                 </ul>
-                <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
-                  Learn more
-                </button>
+                <Link href="/course-detail">
+                  <button className="mt-3 lg:mt-4 xl:mt-5 pt-[10px] pb-3 px-8 lg:py-2 lg:px-5 flex items-center justify-center small-font font-[600] border border-gray-400 hover:bg-gray-900 hover:text-white duration-300 transition-all rounded-[10px]">
+                    Learn more
+                  </button>
+                </Link>
               </div>
             </div>
           </section>

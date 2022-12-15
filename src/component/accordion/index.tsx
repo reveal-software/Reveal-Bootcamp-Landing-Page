@@ -2,7 +2,7 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Accordion() {
   return (
-    <div className="mt-[160px] w-full px-4 py-16  grid grid-col-1 lg:grid-cols-2">
+    <div className=" border-t mt-[60px] w-full px-4 py-16  grid grid-col-1 lg:grid-cols-2">
       <div className="w-full max-w-xl p-2 mx-auto bg-white rounded-2xl">
         <Disclosure>
           {({ open }) => (
@@ -91,10 +91,15 @@ export default function Accordion() {
         </Disclosure>
       </div>
       <div className="">
-        <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-[800]">
+        <h1
+          className="text-xl md:text-2xl lg:text-4xl xl:text-4xl font-[800]"
+          style={{
+            fontFamily: "League Spartan !important"
+          }}
+        >
           Lorem, ipsum dolor.
         </h1>
-        <p className="mt-4 text-lg lg:text-xl xl:text-2xl">
+        <p className="mt-4 text-lg lg:text-xl xl:text-3xl">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
           perferendis odio doloremque molestiae voluptatibus dolorem deserunt
           exercitationem sit sint consectetur id, libero optio ab dignissimos
