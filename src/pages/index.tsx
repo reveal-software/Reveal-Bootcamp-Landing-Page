@@ -24,7 +24,7 @@ export default function Home() {
         <Header />
 
         {/* Hero */}
-        <section className="-mt-[100px] relative h-[calc(110vh)] lg:h-[calc(110vh+100px)] flex flex-col bg-[#F5F147]">
+        <section className="-mt-[100px] relative min-h-[calc(4  0vh)] lg:h-[calc(110vh+100px)] flex flex-col bg-[#F5F147]">
           {/* <div
             className="
           absolute
@@ -96,7 +96,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex justify-center mx-[15%] lg:mt-16">
-                    <div className="hidden md:block flex-1">
+                    <div className="hidden lg:block flex-1">
                       <div className="flex items-center">
                         {/* <div className="left">
                           <img
@@ -139,9 +139,9 @@ export default function Home() {
                       xl:text-xl
                       font-[600]
                       items-center
-                      rounded-full
-                      cursor-pointer
+                      rounded-xl
                       text-center
+                      cursor-pointer
                     "
                           style={{
                             fontFamily: "League Spartan !important"
@@ -151,7 +151,7 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    <div className="hidden md:flex flex-1">
+                    <div className="hidden lg:flex flex-1">
                       <div className="">
                         <img
                           className="max-w-[40px]"
@@ -205,7 +205,7 @@ export default function Home() {
         </section>
         {/* <Caroucel /> */}
 
-        <div className="flex max-w-7xl mx-auto space-x-10 -mt-[280px] z-[999] h-[420px] items-center">
+        <div className="hidden lg:flex max-w-7xl mx-auto space-x-10 -mt-[280px] z-[999] h-[420px] items-center">
           <div className="overflow-hidden basis-[28%] rounded-xl shadow-xl h-[65%]">
             <img className="h-full w-full" src="left-photo.jpg" alt="" />
           </div>
@@ -218,11 +218,11 @@ export default function Home() {
         </div>
 
         {/* Container */}
-        <div className=" mx-[2%] md:mx-[10%] lg:mx-[10%] mt-[100px]">
+        <div className="mx-[5%] md:mx-[10%] lg:mx-[10%] mt-10 lg:mt-[100px]">
           {/* Section */}
-          <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
+          <section className="lg:bg-gray-100 lg:p-[5%] rounded-3xl min-h-[400px] flex flex-col-reverse lg:flex-row items-start justify-evenly">
             <MotionViewHorizontal>
-              <div className="text-center md:text-left max-w-[70%] xl:max-w-[90%] mt-5">
+              <div className="text-left lg:max-w-[70%] xl:max-w-[90%] mt-5">
                 <h2
                   className="medium-large-font font-[800] my-0 tracking-tight mb-5"
                   style={{
@@ -248,7 +248,7 @@ export default function Home() {
                   environment. Our online part-time and full-time programs give
                   you the same outcome.
                 </p>
-                <div className="mt-16 -ml-5">
+                <div className="mt-16 lg:-ml-5">
                   <a
                     className="
                     border-4
@@ -278,10 +278,10 @@ export default function Home() {
                 </div>
               </div>
             </MotionViewHorizontal>
-            <div className="w-[160%] xl:w-[120%]">
+            <div className="w-[75%] lg:w-[160%] xl:w-[120%]">
               <MotionView none>
                 <img
-                  className="w-full h-full border hidden md:block max-h-[100%] rounded-[30px] ml-[5%]"
+                  className="hidden lg:block w-full lg:max-h-[100%] rounded-md lg:rounded-[30px] ml-[5%]"
                   src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
                   alt=""
                 />
@@ -682,29 +682,20 @@ export default function Home() {
                 </g>
               </svg>
             </div>
-            <div className="mt-[150px] lg:mt-[200px] mx-auto px-4 sm:px-6">
-              <h2
-                className="medium-large-font font-[800] my-0 tracking-tight mb-5"
-                style={{
-                  fontFamily: "League Spartan !important"
-                }}
-              >
-                Why Skillfull?
-              </h2>
+            <div className="mt-[50px] md:mt-[150px] lg:mt-[200px] mx-auto">
               <MotionView>
-                <div className="py-12 md:py-5">
-                  <div className="mx-auto text-left pb-5 md:pb-16">
-                    {/* <p
-                      className="medium-font text-gray-600"
-                      data-aos="zoom-y-out"
-                    >
-                      Why should you choose us...
-                    </p> */}
-                  </div>
-                </div>
+                <h2
+                  className="medium-large-font font-[800] my-0 tracking-tight mb-5"
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
+                  Why Skillfull?
+                </h2>
               </MotionView>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 z-[999] relative">
+
+            <div className="mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 z-[999] relative">
               <div className="lg:border-r-[3px] border-yellow-400 mx-5">
                 <h1
                   className="medium-font mb-3 font-[500]"
@@ -759,7 +750,7 @@ export default function Home() {
           </section>
 
           {/* Programs */}
-          <section className="mb-[30px] max-w-5xl text-left lg:mx-auto mt-[300px]">
+          <section className="mb-[30px] max-w-5xl text-left lg:mx-auto mt-[60px] md:mt-[100px] lg:mt-[300px]">
             <h2
               className="medium-large-font font-[800] my-0 tracking-tight mb-5"
               style={{
@@ -771,7 +762,6 @@ export default function Home() {
                 className="font-[300]"
                 style={{ fontFamily: "Satisfy !important" }}
               >
-                {" "}
                 prepare
               </span>{" "}
               <br />{" "}
@@ -795,7 +785,7 @@ export default function Home() {
           </section>
 
           {/* Call to Action */}
-          <section className="relative mb-[100px] mx-[13%] mt-[150px]">
+          <section className="relative mb-[100px] mx-[13%] mt-[50px] md:mt-[100px] lg:mt-[150px]">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img

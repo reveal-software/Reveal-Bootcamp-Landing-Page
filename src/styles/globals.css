@@ -34,7 +34,7 @@ a {
   }
 
   .medium-large-font {
-    @apply md:text-5xl lg:text-5xl xl:text-6xl;
+    @apply text-3xl md:text-5xl lg:text-5xl xl:text-6xl;
   }
 
   .medium-font {
