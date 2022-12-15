@@ -90,7 +90,7 @@ const Header = () => {
           </div>
           <nav className="flex">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li
+              {/* <li
                 className={`cursor-pointer  lg:text-lg xl:text-2xl
                       ${
                         darkHeaderRoutes.includes(router.pathname)
@@ -98,8 +98,8 @@ const Header = () => {
                           : "text-black"
                       } `}
               >
-                Call 091054235432
-              </li>
+                
+              </li> */}
 
               <li>
                 <div
@@ -116,16 +116,16 @@ const Header = () => {
                     xl:px-6
                     xl:py-2
                     flex
-                    lg:text-xl
+                    text-sm
                     items-center
                     ${
                       darkHeaderRoutes.includes(router.pathname)
                         ? "text-white border-white"
-                        : "text-gray-700 border-black"
+                        : "text-gray-700 border-[#666]"
                     } 
                   `}
                 >
-                  <span>Sign in</span>
+                  <span>Call 091054235432</span>
                   <svg
                     className={`
                       w-3

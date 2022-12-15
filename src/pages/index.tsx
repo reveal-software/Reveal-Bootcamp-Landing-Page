@@ -24,7 +24,7 @@ export default function Home() {
         <Header />
 
         {/* Hero */}
-        <section className="-mt-[100px] relative h-[calc(110vh)] lg:h-[calc(110vh+100px)] lg:mb-[20vh] flex flex-col bg-[#F5F147]">
+        <section className="-mt-[100px] relative h-[calc(110vh)] lg:h-[calc(110vh+100px)] flex flex-col bg-[#F5F147]">
           {/* <div
             className="
           absolute
@@ -180,29 +180,42 @@ export default function Home() {
             </div>
           </MotionView>
 
-          <MotionView>
+          {/* <MotionView>
             <div className="lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-3">
               <div
-                className="relative bg-contain bg-center mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px] overflow-hidden  lg:-rotate-[7deg] lg:mt-[30px] overflow-hidden rounded-[25px] bg-gray-400"
+                className="relative bg-contain bg-center mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  lg:-rotate-[7deg] lg:mt-[30px] bg-gray-400"
                 style={{
                   background: "url(/left-photo.jpg)"
                 }}
               ></div>
               <div
-                className="hidden bg-contain  lg:block relative mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  overflow-hidden rounded-[25px] bg-gray-400"
+                className="hidden bg-contain  lg:block relative mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  bg-gray-400"
                 style={{
                   background: "url(/left-photo.jpg)"
                 }}
               ></div>
               <div
-                className="hidden bg-contain  lg:block relative mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  rotate-[7deg] mt-[30px] overflow-hidden rounded-[30px] bg-gray-400"
+                className="hidden bg-contain  lg:block relative mx-auto h-[380px] w-[300px] xl:h-[320px] xl:w-[420px]  rotate-[7deg] mt-[30px] rounded-[30px] bg-gray-400"
                 style={{
                   background: "url(/left-photo.jpg)"
                 }}
               ></div>
             </div>
-          </MotionView>
+          </MotionView> */}
         </section>
+        {/* <Caroucel /> */}
+
+        <div className="flex max-w-7xl mx-auto space-x-10 -mt-[280px] z-[999] h-[420px] items-center">
+          <div className="overflow-hidden basis-[28%] rounded-xl shadow-xl h-[65%]">
+            <img className="h-full w-full" src="left-photo.jpg" alt="" />
+          </div>
+          <div className="flex-grow overflow-hidden rounded-xl shadow-4xl">
+            <img className="h-full w-full" src="left-photo.jpg" alt="" />
+          </div>
+          <div className="overflow-hidden basis-[28%] rounded-xl shadow-xl h-[65%]">
+            <img className="h-full w-full" src="left-photo.jpg" alt="" />
+          </div>
+        </div>
 
         {/* Container */}
         <div className=" mx-[2%] md:mx-[10%] lg:mx-[10%] mt-[100px]">
@@ -782,7 +795,7 @@ export default function Home() {
           </section>
 
           {/* Call to Action */}
-          <section className="hidden xl:block relative mb-[100px] mx-[13%] mt-[100px]">
+          <section className="relative mb-[100px] mx-[13%] mt-[150px]">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
