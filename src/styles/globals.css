@@ -30,7 +30,7 @@ a {
 
 @layer components {
   .large-font {
-    @apply text-4xl md:text-5xl lg:text-7xl xl:text-8xl;
+    @apply text-3xl md:text-5xl lg:text-7xl xl:text-8xl;
   }
 
   .medium-large-font {
@@ -43,6 +43,10 @@ a {
 
   .small-font {
     @apply lg:text-sm xl:text-lg;
+  }
+
+  .container {
+    @apply mx-[5%] md:mx-[10%] lg:mx-[10%];
   }
 }
 

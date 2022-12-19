@@ -2,7 +2,7 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Accordion() {
   return (
-    <div className=" border-t mt-[60px] w-full px-4 py-16  grid grid-col-1 lg:grid-cols-2">
+    <div className=" border-t mt-[60px] w-full px-4 py-16  grid grid-col-1 lg:grid-cols-2 min-h-[800px]">
       <div className="w-full max-w-xl p-2 mx-auto bg-white rounded-2xl">
         <Disclosure>
           {({ open }) => (

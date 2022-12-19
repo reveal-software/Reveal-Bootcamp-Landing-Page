@@ -1,6 +1,7 @@
-import { useAmp } from "next/amp";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
+import { useAmp } from "next/amp";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Timeline from "../component/Timeline";
@@ -8,7 +9,6 @@ import { useAppState } from "../store/useAppState";
 import CountSection from "../component/CountSection";
 import MotionView from "../component/animation/MotionView";
 import MotionViewHorizontal from "../component/animation/MotionViewHorizontal";
-import Link from "next/link";
 
 export default function Home() {
   const { theme } = useAppState();
@@ -50,7 +50,7 @@ export default function Home() {
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p
-                      className="text-xl medium-font leading-6 xl:mt-10 text-black mb-8"
+                      className="small-font leading-6 xl:mt-10 text-black mb-8"
                       data-aos="zoom-y-out"
                       data-aos-delay={150}
                     >
@@ -87,7 +87,7 @@ export default function Home() {
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
-                      <div className="cursor-pointer border-2 border-black w-[170px] text-center py-3 rounded-xl bg-black text-white font-[600] transition-all duration-300">
+                      <div className="cursor-pointer border-2 border-black w-[170px] text-center py-3 rounded-xl bg-black text-white font-[600] transition-all duration-300 mx-auto">
                         Apply Today
                       </div>
                     </div>
@@ -356,9 +356,9 @@ export default function Home() {
           </section>
 
           {/* Call to Action */}
-          <section className="relative mb-[100px] mx-[13%] mt-[50px] md:mt-[100px] lg:mt-[150px]">
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
+          <section className="relative mb-[100px] mx-[2%] md:mx-[13%] mt-[50px] md:mt-[100px] lg:mt-[150px]">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 gap-y-10 md:gap-8">
+              <div className="w-full mx-0 md:mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
                   className="rounded-3xl mb-6"
                   src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
@@ -375,7 +375,7 @@ export default function Home() {
                   </button>
                 </Link>
               </div>
-              <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
+              <div className="w-full mx-0 md:mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
                   className="rounded-3xl mb-6"
                   src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"
@@ -392,7 +392,7 @@ export default function Home() {
                   </button>
                 </Link>
               </div>
-              <div className="mx-5 bg-gray-100 p-5 rounded-2xl">
+              <div className="w-full mx-0 md:mx-5 bg-gray-100 p-5 rounded-2xl">
                 <img
                   className="rounded-3xl mb-6"
                   src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg"

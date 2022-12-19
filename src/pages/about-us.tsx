@@ -21,16 +21,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col min-h-[60vh] overflow-hidden">
+      <div className="flex flex-col overflow-hidden">
         <Header />
 
         {/* Hero */}
-        <section className="-mt-[100px] relative h-[calc(60vh)] overflow-hidden lg:min-h-[calc(90vh)] xl:min-h-[calc(80vh)] flex flex-col bg-[#333]">
+        <section className="-mt-[100px] pb-[100px] relative overflow-hidden lg:min-h-[calc(90vh)] xl:min-h-[calc(80vh)] flex flex-col bg-[#333]">
           <div className="absolute top-0 left-0 w-full h-full bg-black/30 backdrop-blur-sm z-10"></div>
-          <img
-            className="absolute"
-            src="https://coolwallpapers.me/picsup/5212779-code-programming-screen-monitor-black-computer-text-design-web-webdesign-webdevelopment-webdev-styling-macro-closeup-website-atom-sass-scss-css-free-pictures.jpg"
-          />
 
           <div className="pt-[15vh] lg:pt-[20vh] max-w-8xl mx-auto px-4 sm:px-6 relative z-40">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
@@ -38,10 +34,7 @@ export default function Home() {
                 <div className="text-center pb-12 md:pb-16 text-white">
                   <h1
                     className="
-                text-4xl
-                md:text-6xl
-                lg:text-7xl
-                xl:text-8xl
+                    medium-large-font
                 font-extrabold
                 leading-tighter
                 tracking-tighter
@@ -55,8 +48,7 @@ export default function Home() {
                     We are the best
                     <br />
                     <span
-                      className="text-3xl
-                md:text-6xl font-[800] mt-3 block"
+                      className="medium-large-font mt-3 block"
                       style={{
                         fontFamily: "League Spartan !important"
                       }}
@@ -66,7 +58,7 @@ export default function Home() {
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p
-                      className="text-xl text-gray-200 mb-8"
+                      className="small-font text-gray-200 mb-8"
                       data-aos="zoom-y-out"
                       data-aos-delay={150}
                       style={{
@@ -94,9 +86,9 @@ export default function Home() {
                         <a
                           className="
                       btn
+                      border-2
+                      border-white
                       text-white
-                      bg-gray-900
-                      hover:bg-gray-700
                       sm:w-auto sm:ml-4
                       px-8
                       py-4
@@ -130,7 +122,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className=" mx-[2%] md:mx-[10%] lg:mx-[10%] mt-[50px]">
+        <div className="mx-[5%] md:mx-[10%] lg:mx-[10%] mt-[50px]">
           {/* Section */}
           {/* <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
             <MotionViewHorizontal>
@@ -192,7 +184,8 @@ export default function Home() {
               </MotionView>
             </div>
           </section> */}
-          <section className="min-h-[400px] mt-10">
+
+          <section className="container min-h-[400px] md:mt-10">
             <h1
               className="text-2xl md:text-4xl lg:text-6xl text-left mx-auto mb-5 max-w-3xl font-[800]"
               style={{
@@ -213,16 +206,16 @@ export default function Home() {
             </p>
           </section>
 
-          <section className="h-[400px] flex flex-col md:flex-row  justify-center">
+          <section className="mt-32 h-[400px] flex flex-col md:flex-row  justify-center my-10">
             <Accordion />
           </section>
 
-          <section className="relative min-h-[300px] mt-[120px] mb-[50px] py-[12vh] border flex flex-col md:flex-row items-center justify-evenly bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
+          <section className="relative min-h-[300px] mt-[150px] mb-[50px] py-[12vh] border flex flex-col md:flex-row items-center justify-evenly bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
             <div className="text-center md:text-left max-w-xl xl:max-w-3xl">
               <h2 className="text-xl md:text-5xl lg:text-6xl xl:text-7xl font-[800] my-0 tracking-tight mb-2">
                 {"Don't waste your time,"}
               </h2>
-              <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-200">
+              <p className="text-lg md:text-xl max-w-[80%] md:w-full mx-auto lg:text-2xl xl:text-3xl text-gray-200">
                 {"Start learning to become a globally qualified professional"}
               </p>
             </div>
@@ -247,19 +240,10 @@ export default function Home() {
                 shadow-3xl
                 relative
                       btn
-                      text-black
-                      bg-gray-50
-                      hover:bg-gradient-to-r
-                      hover:from-indigo-800
-                      hover:via-purple-700
-                      hover:to-pink-500
-                      hover:text-white
+                      border-2
+                      border-white
                       duration-300
-                      transition-all
-                      hover:scale-125
-                      hover:border-[3px]
-                      z-[9999]
-                      hover:border-white/40
+                      z-[99]
                       w-full
                       sm:w-auto sm:ml-4
                       px-8
