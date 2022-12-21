@@ -121,9 +121,9 @@ export default function Home() {
           </MotionView>
         </section>
 
-        <section>
+        <section class="SM:hidden">
           <img
-            className="mt-[100px] relative w-[80%] mx-auto lg:max-h-[100%] rounded-md lg:rounded-[30px]"
+            class="sm:hidden mt-[100px] relative w-[80%] mx-auto lg:max-h-[100%] rounded-md lg:rounded-[30px]"
             src="https://upload.wikimedia.org/wikipedia/commons/6/63/Night_view_of_Meskel_Square.jpg"
             alt=""
           />

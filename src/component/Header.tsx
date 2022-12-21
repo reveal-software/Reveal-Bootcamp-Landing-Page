@@ -118,7 +118,8 @@ const Header = () => {
                     } 
                   `}
                 >
-                  <span>Call 0910986585</span>
+                  <span className="hidden sm:block">Call </span>
+                  <span>0910986585</span>
                   <svg
                     className={`
                       w-3
