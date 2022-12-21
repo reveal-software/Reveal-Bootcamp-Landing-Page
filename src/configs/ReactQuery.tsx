@@ -15,9 +15,9 @@ const ReactQuery = ({ children }: Props) => {
   return (
     <QueryClientProvider client={queryClient}>
       {children}
-      {["development", "test"].includes(devEnvironment) && (
+      {/* {["development", "test"].includes(devEnvironment) && (
         <ReactQueryDevtools />
-      )}
+      )} */}
     </QueryClientProvider>
   );
 };

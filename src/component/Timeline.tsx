@@ -49,7 +49,7 @@ const Timeline = () => {
       date: "ONE WEEK LONG",
       title: "Professional English for Software Developers",
       description: `This English learning program is built around your communication challenges since you will work as a global freelancer you'll be communicating in fast-paced environments across different channels, time zones, and cultures.`,
-      footer: `Command line, Java, Git, and GitHub, Algorithms & Data Structures`
+      footer: ``
     }
   ];
 

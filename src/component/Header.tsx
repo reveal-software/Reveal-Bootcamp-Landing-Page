@@ -51,15 +51,10 @@ const Header = () => {
           <div className="flex-shrink-0 mr-4">
             <div className="block" aria-label="Cruip">
               <Link href="/">
-                <h2
-                  className={`font-[800] text-lg md:text-xl cursor-pointer ${
-                    darkHeaderRoutes.includes(router.pathname)
-                      ? "text-white"
-                      : "text-gray-700"
-                  } `}
-                >
-                  Skillfull
-                </h2>
+                <img
+                  src="/assets/skilful-academy-logo.png"
+                  className="w-[200px] mt-7 -ml-8"
+                />
               </Link>
             </div>
           </div>
@@ -72,22 +67,16 @@ const Header = () => {
               } `}
             >
               <Link href="/">
-                <li className="cursor-pointer lg:text-lg xl:text-2xl">Home</li>
+                <li className="cursor-pointer small-font">Home</li>
               </Link>
               <Link href="/course-detail">
-                <li className="cursor-pointer lg:text-lg xl:text-2xl">
-                  Programs
-                </li>
+                <li className="cursor-pointer small-font">Programs</li>
               </Link>
               <Link href="/about-us">
-                <li className="cursor-pointer lg:text-lg xl:text-2xl">
-                  About Us
-                </li>
+                <li className="cursor-pointer small-font">About Us</li>
               </Link>
               <Link href="/contact">
-                <li className="cursor-pointer lg:text-lg xl:text-2xl">
-                  Contact Us
-                </li>
+                <li className="cursor-pointer small-font">Contact Us</li>
               </Link>
             </ul>
           </div>
@@ -105,9 +94,10 @@ const Header = () => {
               </li> */}
 
               <li>
-                <div
+                <a
+                  href="tel:0910986585"
                   className={`
-                  cursor-pointer
+                    cursor-pointer
                     border-2
                     font-[600]
                     rounded-md
@@ -119,7 +109,7 @@ const Header = () => {
                     xl:px-6
                     xl:py-2
                     flex
-                    text-sm
+                    text-xs
                     items-center
                     ${
                       darkHeaderRoutes.includes(router.pathname)
@@ -128,7 +118,7 @@ const Header = () => {
                     } 
                   `}
                 >
-                  <span>Call 091054235432</span>
+                  <span>Call 0910986585</span>
                   <svg
                     className={`
                       w-3
@@ -151,7 +141,7 @@ const Header = () => {
                       fillRule="nonzero"
                     />
                   </svg>
-                </div>
+                </a>
               </li>
             </ul>
           </nav>
