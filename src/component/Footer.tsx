@@ -252,23 +252,25 @@ const Footer = () => {
 
       <div className="w-full mt-[4vh]">
         <ul
-          className={`hidden md:flex flex-grow justify-center flex-wrap space-x-5 items-center text-lg md:text-lg font-[400]`}
+          className={`flex flex-grow  ml-[6%] sm:ml-0 sm:justify-center flex-wrap space-x-5 items-center text-lg md:text-lg font-[400]`}
         >
           <Link href="/">
-            <li className="cursor-pointer small-font hover:underline">Home</li>
+            <li className="cursor-pointer text-sm small-font hover:underline">
+              Home
+            </li>
           </Link>
           <Link href="/course-detail">
-            <li className="cursor-pointer small-font hover:underline">
+            <li className="cursor-pointer text-sm small-font hover:underline">
               Programs
             </li>
           </Link>
           <Link href="/about-us">
-            <li className="cursor-pointer small-font hover:underline">
+            <li className="cursor-pointer text-sm small-font hover:underline">
               About Us
             </li>
           </Link>
           <Link href="/contact">
-            <li className="cursor-pointer small-font hover:underline">
+            <li className="cursor-pointer text-sm small-font hover:underline">
               Contact Us
             </li>
           </Link>
