@@ -7,6 +7,7 @@ import { useAppState } from "../store/useAppState";
 import CountSection from "../component/CountSection";
 import MotionView from "../component/animation/MotionView";
 import MotionViewHorizontal from "../component/animation/MotionViewHorizontal";
+import Link from "next/link";
 
 export default function Programs() {
   const { theme } = useAppState();
@@ -21,6 +22,7 @@ export default function Programs() {
 
       <div className="flex flex-col min-h-screen overflow-hidden">
         <Header />
+                      <Link href="/register" className="block">
 
         {/* Hero */}
         <section className="-mt-[100px] relative h-[calc(110vh)] lg:h-[calc(110vh+100px)] lg:mb-[20vh] flex flex-col bg-[#F5F147]">
@@ -107,8 +109,8 @@ export default function Programs() {
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
-                      <div>
-                        <a
+                      <Link href="/register">
+                        <div
                           className="
                       btn
                       text-white
@@ -128,8 +130,8 @@ export default function Programs() {
                     "
                         >
                           APPLY TODAY
-                        </a>
-                      </div>
+                        </div>
+                      </Link>
                     </div>
                     <div className="hidden md:flex flex-1">
                       <p className="text-left ml-2 lg:text-lg xl:text-2xl ">

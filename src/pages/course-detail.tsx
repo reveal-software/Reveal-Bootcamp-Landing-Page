@@ -193,7 +193,7 @@ export default function FullStackDevelopment() {
         {/* Hero */}
         <section className="px-[5%] md:px-[10%] lg:px-[10%] -mt-[100px] relative min-h-[calc(60vh)] lg:h-[calc(70vh+100px)] flex flex-col bg-[#F5F147]">
           <MotionView down>
-            <div className="pt-[15vh] lg:pt-[20vh] max-w-8xl mx-auto relative">
+            <div className="container pt-[15vh] lg:pt-[20vh] max-w-8xl mx-auto relative">
               <div className="pt-32 pb-12 md:pt-40 md:pb-20">
                 <div className="text-left pb-12 md:pb-16">
                   <h1
@@ -202,6 +202,7 @@ export default function FullStackDevelopment() {
                 font-extrabold
                 leading-tighter
                 tracking-tighter
+                max-w-6xl
                 mb-4
                 z-[99]
                 text-black
@@ -223,9 +224,11 @@ export default function FullStackDevelopment() {
                       {"Learn in-demand skills. change your life."}
                     </p>
                   </div>
-                  <div className="cursor-pointer border-2 border-black w-[140px] md:w-[170px] text-center py-3 md:py-4 rounded-full hover:bg-black hover:text-white transition-all duration-300">
-                    Apply Today
-                  </div>
+                  <Link href="/register">
+                    <div className="cursor-pointer border-2 border-black w-[140px] md:w-[170px] text-center py-3 md:py-4 rounded-full hover:bg-black hover:text-white transition-all duration-300">
+                      Apply Today
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -233,11 +236,11 @@ export default function FullStackDevelopment() {
         </section>
 
         {/* Container */}
-        <div className="container mt-5 lg:mt-[100px]  max-w-8xl">
+        <div className="mt-5 lg:mt-[100px]  max-w-8xl">
           {/* Section */}
-          <section className=" rounded-3xl min-h-[400px] flex flex-col lg:flex-row items-start justify-evenly">
-            <MotionViewHorizontal>
-              <div className="text-left lg:max-w-[70%] xl:max-w-[90%] mb-16">
+          <section className="px-[5%] md:px-[10%] lg:px-[10%]">
+            <div className="container mx-auto min-h-[400px] flex flex-col lg:flex-row items-start justify-evenly">
+              <div className="text-left lg:max-w-[70%] xl:max-w-[90%] mb-16 lg:mr-[10%]">
                 <h2
                   className="medium-large-font font-[800] my-0 tracking-tight mb-5 mt-[50px] md:mt-0"
                   style={{
@@ -255,40 +258,8 @@ export default function FullStackDevelopment() {
                   Find out the pacing options available, the price, and more
                   information about this course.
                 </p>
-
-                <div className="mt-12 md:mt-16 lg:-ml-5">
-                  <a
-                    className="
-                    border-2
-                    hover:bg-black
-                    hover:text-white
-                    transition-all
-                    duration-300
-                    border-black
-                    hover:border-black
-                      sm:w-auto sm:ml-4
-                      px-8
-                      py-4
-                      xl:px-12
-                      xl:py-5
-                      xl:text-xl
-                      font-[600]
-                      items-center
-                      rounded-full
-                      cursor-pointer
-                      text-center
-                    "
-                    style={{
-                      fontFamily: "League Spartan !important"
-                    }}
-                  >
-                    Learn More
-                  </a>
-                </div>
               </div>
-            </MotionViewHorizontal>
-            <div className="w-[100%] lg:w-[50%] xl:w-[120%]">
-              <MotionView none>
+              <div className="w-[100%] lg:w-[50%] xl:w-[120%]">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <div className="my-2 md:my-4 lg:my-6">
                     <h1 className="font-[700] text-lg">
@@ -309,13 +280,13 @@ export default function FullStackDevelopment() {
                     <p>Ksh 150, 000 (USD 1500)</p>
                   </div>
                 </div>
-              </MotionView>
+              </div>
             </div>
           </section>
 
-          <section className="mt-[50px] md:mt-[20px]">
+          <section className="container mt-[50px] mx-auto md:mt-[20px]">
             <h2
-              className="medium-large-font font-[800] my-0 tracking-tight mb-5 text-center mb-10"
+              className="medium-large-font font-[800] my-0 tracking-tight text-center mb-10"
               style={{
                 fontFamily: "League Spartan !important"
               }}
@@ -366,9 +337,11 @@ export default function FullStackDevelopment() {
           /> */}
             <Timeline />
           </section>
-          <div className="mx-auto mb-0 cursor-pointer border-2 border-black w-[170px] text-center py-4 rounded-full hover:bg-black hover:text-white transition-all duration-300">
-            Apply Today
-          </div>
+          <Link href="/register">
+            <div className="mx-auto mb-0 cursor-pointer border-2 border-black w-[170px] text-center py-4 rounded-full hover:bg-black hover:text-white transition-all duration-300">
+              Apply Today
+            </div>
+          </Link>
 
           {/* Testimonial */}
           <section className="relative mb-20">

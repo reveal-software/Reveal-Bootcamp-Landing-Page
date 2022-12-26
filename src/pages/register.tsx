@@ -39,10 +39,7 @@ export default function Home() {
               <div className="text-center pb-12 md:pb-16">
                 <h2
                   className="text-3xl
-                md:text-6xl font-[800] mt-3 block"
-                  style={{
-                    fontFamily: "League Spartan !important"
-                  }}
+                md:text-5xl font-[900] mt-5 block"
                 >
                   Register for the Program!
                 </h2>
@@ -153,31 +150,27 @@ export default function Home() {
                         The details of the order are below:
                       </p>
 
-                      <div className="border-b border-black border-dashed pb-5 mt-12">
+                      <div className="mt-12">
                         <p className="small-font text-left">
-                          <span className="font-[600]">Domain :</span>
+                          <span className="font-[600] mr-2">Domain :</span>
                           fdsafdsa.org
                         </p>
                         <p className="small-font text-left">
-                          <span className="font-[600]">Number Of Years :</span>1
-                          Year
+                          <span className="font-[600] mr-2">
+                            Total Credit Hours :
+                          </span>
+                          30hrs
                         </p>
                         <p className="small-font text-left">
-                          <span className="font-[600]">Package :</span> PREMIUM
-                          Hosting
+                          <span className="font-[600] mr-2">Package :</span>{" "}
+                          PREMIUM Hosting
                         </p>
                       </div>
 
-                      <div className="mt-5">
-                        <p className="small-font text-left">
-                          <span className="font-[600]">Discount Applied :</span>
-                          0 %
-                        </p>
-                      </div>
                       <div className="mt-1 mb-5 border-b border-black border-dashed pb-5">
                         <p className="small-font text-left">
-                          <span className="font-[600]">Amount :</span> 6,500
-                          Birr
+                          <span className="font-[600] mr-2">Amount :</span>{" "}
+                          6,500 Birr
                         </p>
                       </div>
 

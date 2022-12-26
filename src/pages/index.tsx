@@ -87,9 +87,11 @@ export default function Home() {
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
-                      <div className="cursor-pointer border-2 border-black w-[170px] text-center py-3 rounded-xl bg-black text-white font-[600] transition-all duration-300 mx-auto">
-                        Apply Today
-                      </div>
+                      <Link href="/register" className="block">
+                        <div className="cursor-pointer border-2 border-black w-[170px] text-center py-3 rounded-xl bg-black text-white font-[600] transition-all duration-300 mx-auto">
+                          Apply Today
+                        </div>
+                      </Link>
                     </div>
                     <div className="hidden lg:flex flex-1">
                       <div className="">
