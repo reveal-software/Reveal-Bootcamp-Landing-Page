@@ -25,15 +25,14 @@ export default function Home() {
         <Header />
 
         {/* Hero */}
-        <section className="-mt-[100px] pb-[100px] relative overflow-hidden lg:min-h-[calc(90vh)] xl:min-h-[calc(80vh)] flex flex-col bg-[#333]">
-          <div className="absolute top-0 left-0 w-full h-full bg-black/30 backdrop-blur-sm z-10"></div>
-
-          <div className="pt-[15vh] lg:pt-[20vh] max-w-8xl mx-auto px-4 sm:px-6 relative z-40">
-            <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-              <MotionView down>
-                <div className="text-center pb-12 md:pb-16 text-white">
-                  <h1
-                    className="
+        <section className="-mt-[100px] pb-[100px] relative overflow-hidden lg:min-h-[calc(90vh)] xl:min-h-[calc(80vh)] flex flex-col">
+          <div className="container min-h-[100px] md:mt-10 mx-auto pt-[15vh] lg:pt-[20vh] sm:px-6 relative z-40">
+            <div className="pt-32 pb-5 md:pt-40">
+              <div className="grid grid-cols-1 lg:grid-cols-2 justify-between">
+                <MotionView down>
+                  <div className="pb-12 md:pb-16 text-black">
+                    <h1
+                      className="
                     medium-large-font
                 font-extrabold
                 leading-tighter
@@ -41,88 +40,44 @@ export default function Home() {
                 mb-4
                 z-[99]
               "
-                    style={{
-                      fontFamily: "League Spartan !important"
-                    }}
-                  >
-                    We are the best
-                    <br />
-                    <span
-                      className="medium-large-font mt-3 block"
                       style={{
                         fontFamily: "League Spartan !important"
                       }}
                     >
-                      Bootcamp you can find in Addis.
-                    </span>
-                  </h1>
-                  <div className="max-w-3xl mx-auto">
-                    <p
-                      className="small-font text-gray-200 mb-8"
-                      data-aos="zoom-y-out"
-                      data-aos-delay={150}
-                      style={{
-                        fontFamily: "League Spartan !important"
-                      }}
-                    >
-                      {"Learn in-demand skills. change your life."}
-                    </p>
-                  </div>
-
-                  <div className="flex justify-center mx-[15%] lg:mt-16">
-                    <div className="hidden md:block flex-1">
-                      <p className="text-md lg:text-lg xl:text-2xl text-left overflow-hidden">
-                        Program design & delivered by experts with over 13 years
-                        of experience. Learn in-demand skills & change your
-                        lifestyle
+                      About the Founder
+                    </h1>
+                    <div className="max-w-xl">
+                      <p className="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam debitis necessitatibus ratione excepturi veniam
+                        eligendi sapiente voluptates quas sunt! Magnam tempora
+                        accusamus assumenda voluptatibus animi impedit
+                        perspiciatis eveniet enim fugit!
                       </p>
-                    </div>
-                    <div
-                      className="flex-grow flex-5 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
-                      data-aos="zoom-y-out"
-                      data-aos-delay={300}
-                    >
-                      <div>
-                        <a
-                          className="
-                      btn
-                      border-2
-                      border-white
-                      text-white
-                      sm:w-auto sm:ml-4
-                      px-8
-                      py-4
-                      xl:px-16
-                      xl:py-8
-                      xl:text-xl
-                      font-[600]
-                      items-center
-                      rounded-full
-                      cursor-pointer
-                      text-center
-                    "
-                          style={{
-                            fontFamily: "League Spartan !important"
-                          }}
-                        >
-                          Apply Today
-                        </a>
-                      </div>
-                    </div>
-                    <div className="hidden md:flex flex-1">
-                      <p className="text-left lg:text-lg xl:text-2xl ml-2">
-                        Project Based Learning, you will build a real-world full
-                        product throughout the journey One-to-One Mentorship
+                      <p className="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam debitis necessitatibus ratione excepturi veniam
+                        eligendi sapiente voluptates quas sunt! Magnam tempora
+                        accusamus assumenda voluptatibus animi impedit
+                        perspiciatis eveniet enim fugit!
                       </p>
                     </div>
                   </div>
-                </div>
-              </MotionView>
+                </MotionView>
+                <MotionView down>
+                  <div className="pb-12 md:pb-16 text-black">
+                    <img
+                      src="https://images.assetsdelivery.com/compings_v2/robinsphoto/robinsphoto2007/robinsphoto200700011.jpg"
+                      className="mx-auto max-w-[300px] -mt-[80px]"
+                    />
+                  </div>
+                </MotionView>
+              </div>
             </div>
           </div>
         </section>
 
-        <div className="mx-[5%] md:mx-[10%] lg:mx-[10%] mt-[50px]">
+        <div className="-mt-[100px]">
           {/* Section */}
           {/* <section className="lg:bg-gray-100 p-[5%] rounded-3xl min-h-[400px] flex flex-col md:flex-row items-start justify-evenly">
             <MotionViewHorizontal>
@@ -185,31 +140,85 @@ export default function Home() {
             </div>
           </section> */}
 
-          <section className="container min-h-[400px] md:mt-10">
-            <h1
-              className="text-2xl md:text-4xl lg:text-6xl text-left mx-auto mb-5 max-w-3xl font-[800]"
-              style={{
-                fontFamily: "League Spartan !important"
-              }}
-            >
-              Where else to start but at the beginning
-            </h1>
-            <p className="medium-font max-w-3xl mx-auto">
-              We believe in the transformative power of knowledge. We believe
-              it, because we’ve experienced and seen it first hand. How those
-              10,000 hours of expertise can swiftly turn into $10,000. Or even
-              $100,000. And how empires can be built on goat milk, podcasting,
-              and VR roller coasters. <br />
-              <br />
-              From the Bay area to Brooklyn, Fedora to Teachable, one person to
-              over 150–our story is one of transformation too.
-            </p>
+          <section className="container mx-auto min-h-[100px] md:mt-10 sm:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="pb-12 md:pb-16 text-black">
+                <h1
+                  className="
+                  text-xl
+                  md:text-3xl
+                  lg:text-4xl
+                font-extrabold
+                leading-tighter
+                tracking-tighter
+                mb-4
+                z-[99]
+              "
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
+                  Mission
+                </h1>
+                <div className="max-w-xl">
+                  <p className="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam debitis necessitatibus ratione excepturi veniam
+                    eligendi sapiente voluptates quas sunt! Magnam tempora
+                    accusamus assumenda voluptatibus animi impedit perspiciatis
+                    eveniet enim fugit!
+                  </p>
+                  <p className="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam debitis necessitatibus ratione excepturi veniam
+                    eligendi sapiente voluptates quas sunt! Magnam tempora
+                    accusamus assumenda voluptatibus animi impedit perspiciatis
+                    eveniet enim fugit!
+                  </p>
+                </div>
+              </div>
+              <div className="pb-12 md:pb-16 text-black">
+                <h1
+                  className="
+                  text-xl
+                  md:text-3xl
+                  lg:text-4xl
+                font-extrabold
+                leading-tighter
+                tracking-tighter
+                mb-4
+                z-[99]
+              "
+                  style={{
+                    fontFamily: "League Spartan !important"
+                  }}
+                >
+                  Vision
+                </h1>
+                <div className="max-w-xl">
+                  <p className="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam debitis necessitatibus ratione excepturi veniam
+                    eligendi sapiente voluptates quas sunt! Magnam tempora
+                    accusamus assumenda voluptatibus animi impedit perspiciatis
+                    eveniet enim fugit!
+                  </p>
+                  <p className="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam debitis necessitatibus ratione excepturi veniam
+                    eligendi sapiente voluptates quas sunt! Magnam tempora
+                    accusamus assumenda voluptatibus animi impedit perspiciatis
+                    eveniet enim fugit!
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
 
-          <section className="mt-32 h-[400px] flex flex-col md:flex-row  justify-center my-10">
+          <section className="h-[400px] flex flex-col md:flex-row  justify-center my-10">
             <Accordion />
           </section>
-
+          {/* 
           <section className="relative min-h-[300px] mt-[150px] mb-[50px] py-[12vh] border flex flex-col md:flex-row items-center justify-evenly bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 text-white rounded-3xl">
             <div className="text-center md:text-left max-w-xl xl:max-w-3xl">
               <h2 className="text-xl md:text-5xl lg:text-6xl xl:text-7xl font-[800] my-0 tracking-tight mb-2">
@@ -283,7 +292,7 @@ export default function Home() {
               From the Bay area to Brooklyn, Fedora to Teachable, one person to
               over 150–our story is one of transformation too.
             </p>
-          </section>
+          </section> */}
         </div>
         {/* Footer */}
         <Footer />

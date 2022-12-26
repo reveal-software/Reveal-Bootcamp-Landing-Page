@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 const Header = () => {
   const router = useRouter();
   const [show, setShow] = useState(true);
-  const darkHeaderRoutes = ["/about-us"];
+  const darkHeaderRoutes = [];
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
