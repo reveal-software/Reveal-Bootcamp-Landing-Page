@@ -14,6 +14,8 @@ export default function Home() {
   const { theme } = useAppState();
 
   return (
+    <>
+    
     <div className="light bg-white text-black">
       <Head>
         <title>Reveal</title>
@@ -923,5 +925,6 @@ export default function Home() {
         <Footer />
       </div>
     </div>
+    </>
   );
 }
